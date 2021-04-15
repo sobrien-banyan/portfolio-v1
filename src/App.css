@@ -1,14 +1,10 @@
 .App {
-  text-align: center;
-  background:url('assets/img/matchMan.jpg');
-  background-size: cover;
-  height: 100vh;
-  color:gainsboro;
-  overflow: hidden;
+  width: 100%;
+  
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -19,19 +15,37 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 66vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+  background: url('assets/img/bay.jpg');
+  background-size: cover;
+  /* font-size: calc(10px + 2vmin); */
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h1 {
+  position: relative;
+  top: 50px;
+  font-size: calc(10px + 5vmin)
+  
 }
+
+.container-header-image-person {
+position: relative;
+}
+.container-header-image-person img {
+  border-radius: 50%;
+
+}
+
+.main {
+  height: 100vh;
+  background: rgb(48, 47, 54);
+}
+
+
 
 @keyframes App-logo-spin {
   from {
