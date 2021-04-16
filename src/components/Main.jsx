@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import About from './About';
+import Skills from './Skills';
+import Tools from './Tools';
+import Apps from './Apps';
+import Contact from './Contact';
+import Footer from './Footer';
 
 const Main = (props) => {
 
@@ -13,7 +19,12 @@ const Main = (props) => {
 
     return ( 
         <main className='main'  onClick={() => changeColor()} style={{'filter': `hue-rotate(${pickedHue}deg)`}}>
-            hello world
+           <About/>
+            <Skills />
+            <Apps/>
+            <Tools/>
+            <Contact/>
+            <Footer/>
         </main>
      );
 }
