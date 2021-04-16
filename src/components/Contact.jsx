@@ -8,7 +8,7 @@ const Contact = () => {
         <br/>
   </div>
 
-  <form className="w3-container" action="POST" netlify='true'>
+  <form className="w3-container" name="contact" method="POST" data-netlify="true">
     <div className="w3-section">
       <label>Name</label>
       <input className="w3-input w3-border w3-hover-border-black" style={{width:100 + '%'}} type="text" name="Name" required/>
