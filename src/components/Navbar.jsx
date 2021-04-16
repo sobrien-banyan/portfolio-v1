@@ -28,7 +28,7 @@ const navCloser = () => {
           <a href='#apps'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">APPS</button></a>
           <a href='#skills'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">SKILLS</button></a>
           <a href='#tools'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">TOOLS</button></a>
-          <a href='#contact'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">CONTACT</button></a>
+          {/* <a href='#contact'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">CONTACT</button></a> */}
         </div>
 
            
@@ -46,7 +46,7 @@ const navCloser = () => {
           <a href='#apps'><button className="w3-padding-large w3-button">APPS</button></a>
           <a href='#skills'><button className="w3-padding-large w3-button">SKILLS</button></a>
           <a href='#tools'><button className="w3-padding-large w3-button">TOOLS</button></a>
-          <a href='#contact'><button className="w3-padding-large w3-button">CONTACT</button></a>
+          {/* <a href='#contact'><button className="w3-padding-large w3-button">CONTACT</button></a> */}
           
          
         </div>
