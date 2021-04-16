@@ -22,8 +22,8 @@ const onSubmit = (e) => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...formData })
       })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error.message));
+        .then(() => console.log('success'))
+        .catch(error => console.error(error.message));
 
       e.preventDefault();
 };
