@@ -1,18 +1,10 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React from 'react';
 
-
-const Header = (props) => {
-  return (
-    <header id="home" className="App-header">
-      <Navbar />
-      <h2>Web Developer</h2>
-      <h1>Sean OBrien</h1>
-      <h2 className="App-logo">Under Construction</h2>
-      <div className="container-header-image-person " id="about">
-        <img src="/assets/img/me-clock.jpg" alt="profile"></img>
-        <div className="w3-row ">
-          <div className="w3-quarter icon-hover">
+const Links = () => {
+    return ( 
+     
+             <div className="links-small-screen">
+          <div className="link-icon icon-hover">
               <a target="_top" rel="noopener noreferrer" href="mailto:ecosean1@gmail.com" >
 
           <svg viewBox="0 0 128 128">
@@ -22,7 +14,7 @@ const Header = (props) => {
           </div>
 
           
-          <div className="w3-quarter icon-hover">
+          <div className="link-icon icon-hover">
               <a  target="_top" rel="noopener noreferrer" href='https://www.facebook.com/profile.php?id=100065432952528'>
 
           <svg viewBox="0 0 128 128">
@@ -32,7 +24,7 @@ const Header = (props) => {
           </div>
 
 
-          <div className="w3-quarter icon-hover">
+          <div className="link-icon icon-hover">
            <a  target="_top" rel="noopener noreferrer" href='https://github.com/sobrien007'>
                 <svg viewBox="0 0 128 128">
               <g fill="#dcdcdc">
@@ -50,18 +42,16 @@ const Header = (props) => {
                   </a>
           </div>
 
-          <div className="w3-quarter icon-hover">
+          <div className="link-icon icon-hover">
               <a  target="_top" rel="noopener noreferrer" href='https://www.linkedin.com/in/sean-obrien-82270020a/'>
 
           <svg viewBox="0 0 128 128">
-        <g id="original"><path fill="#0076b2" d="M116,3H12a8.91,8.91,0,0,0-9,8.8V116.22A8.91,8.91,0,0,0,12,125H116a8.93,8.93,0,0,0,9-8.81V11.77A8.93,8.93,0,0,0,116,3Z"></path><path fill="#fff" d="M21.06,48.73H39.17V107H21.06Zm9.06-29a10.5,10.5,0,1,1-10.5,10.49,10.5,10.5,0,0,1,10.5-10.49"></path><path fill="#fff" d="M50.53,48.73H67.89v8h.24c2.42-4.58,8.32-9.41,17.13-9.41C103.6,47.28,107,59.35,107,75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87,7.36-10.87,15V107H50.53Z"></path></g>
-        </svg>
+<g id="original"><path fill="#0076b2" d="M116,3H12a8.91,8.91,0,0,0-9,8.8V116.22A8.91,8.91,0,0,0,12,125H116a8.93,8.93,0,0,0,9-8.81V11.77A8.93,8.93,0,0,0,116,3Z"></path><path fill="#fff" d="M21.06,48.73H39.17V107H21.06Zm9.06-29a10.5,10.5,0,1,1-10.5,10.49,10.5,10.5,0,0,1,10.5-10.49"></path><path fill="#fff" d="M50.53,48.73H67.89v8h.24c2.42-4.58,8.32-9.41,17.13-9.41C103.6,47.28,107,59.35,107,75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87,7.36-10.87,15V107H50.53Z"></path></g>
+</svg>
               </a>
           </div>
         </div>
-      </div>
-    </header>
-  );
-};
-
-export default Header;
+     );
+}
+ 
+export default Links;

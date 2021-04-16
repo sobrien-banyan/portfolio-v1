@@ -52,7 +52,7 @@ a {
 }
 
 .App-header {
-  min-height: 66vh;
+  height: 66vh;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -62,19 +62,51 @@ a {
   /* font-size: calc(10px + 2vmin); */
 }
 
-.App-header h1 {
+.App-header h2 {
   position: relative;
-  top: 50px;
-  font-size: calc(10px + 5vmin)
+  top: 13vh;
+  font-size: calc(8px + 5vmin)
   
 }
 
+.App-header h1 {
+  position: relative;
+  top: 17vh;
+  font-size: calc(50px + 5vmin);
+  color: var(--black);
+}
+
 .container-header-image-person {
-position: relative;
+position: absolute;
+z-index: 2;
+left: 8vw;
+top: 53vh;
 }
 .container-header-image-person img {
   border-radius: 50%;
+  width:auto;
+  height: calc(65px + 7vmax);
 
+}
+
+.icon-hover :hover{
+transform: scale(1.1);
+}
+
+svg {
+  overflow: visible !important;
+}
+
+.links-small-screen {
+  width: 100%;
+  padding-top: 64px;
+  
+  display: none;
+  justify-content: space-evenly;
+}
+.link-icon {
+  width: 19.999%;
+ height: auto;
 }
 
 .main {
@@ -89,5 +121,23 @@ position: relative;
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 601px) {
+ 
+.App-header h2 {
+  color: var(--black)
+}
+.container-header-image-person {
+  left: 62%;
+
+}
+
+  .container-header-image-person div {
+  visibility: hidden;
+  }
+  .links-small-screen {
+    display: flex;
   }
 }
