@@ -37,7 +37,7 @@ const onSubmit = (e) => {
         <br/>
   </div>
 
-  <form className="w3-container" onSubmit={(e) => onSubmit(e)}>
+  <form className="w3-container" onSubmit={(e) => onSubmit(e)} name="contact" netlify="true" netlify-honeypot="bot-field">
     <div className="w3-section">
       <label>Name</label>
       <input className="w3-input w3-border w3-hover-border-black" onChange={(e) => onChange(e)} style={{width:100 + '%'}} value={formData.Name} type="text" name="Name" placeholder='Please Enter Your Name' required/>
