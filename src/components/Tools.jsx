@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
+import {MainContext} from './Context';
 
 const Tools = () => {
+const store = useContext(MainContext);
+
   return (
-    <div className='bg-black' id="tools">
+    <div  id="tools" style={store.themeBoolean ? store.darkTheme : store.lightTheme}>
       <div
         className="w3-container w3-content w3-padding-64"
       >

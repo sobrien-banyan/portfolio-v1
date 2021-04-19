@@ -1,7 +1,7 @@
 
 :root {
   --black: #161616;
-  --white: gainsboro;
+  --white: #dcdcdc;
   --blue: #6531c5;
 }
 
@@ -11,7 +11,7 @@
 
 a {
   text-decoration: none;
-  color: var(--white)
+  color: inherit;
 }
 
 .hamburger {
@@ -47,6 +47,7 @@ a {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+   
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -65,15 +66,15 @@ a {
 .App-header h2 {
   position: relative;
   top: 13vh;
-  font-size: calc(8px + 5vmin)
-  
+  font-size: calc(8px + 5vmin);
+  color: var(--white);
 }
 
 .App-header h1 {
   position: relative;
   top: 17vh;
   font-size: calc(50px + 5vmin);
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 .container-header-image-person {
@@ -110,7 +111,7 @@ svg {
 }
 
 .main {
-  background: rgb(48, 47, 54);
+  background: #302f36;
 }
 
 
@@ -127,10 +128,16 @@ svg {
 @media (max-width: 601px) {
  
 .App-header h2 {
-  color: var(--black)
+  color: var(--black);
+  top: 4vh;
+  font-size: calc(10px + 9vmin)
 }
 .container-header-image-person {
   left: 62%;
+
+}
+.App-logo {
+  display: none;
 
 }
 

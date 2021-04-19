@@ -6,10 +6,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { MainContextProvider } from './components/Context';
 
 ReactDOM.render(
   <React.StrictMode>
+    <MainContextProvider>
     <App />
+    </MainContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
