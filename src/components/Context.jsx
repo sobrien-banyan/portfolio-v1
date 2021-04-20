@@ -8,6 +8,7 @@ export const MainContextProvider = (props) => {
     const [darkTheme, setDarkTheme] = useState({background: '#161616', color: '#dcdcdc'});
     const [darkThemeTwo, setDarkThemeTwo] = useState({background: '#302f36', color: '#dcdcdc'});
     const [themeBoolean, setThemeBoolean] = useState(true);
+    const [hueRotate, setHueRotate] = useState('')
 
 
 return (
@@ -23,7 +24,9 @@ return (
             darkThemeTwo, 
             setDarkThemeTwo,
               themeBoolean, 
-              setThemeBoolean
+              setThemeBoolean,
+              hueRotate, 
+              setHueRotate
         }}
         >
             {props.children}

@@ -12,11 +12,11 @@ const About = () => {
     <div className="w3-row w3-padding-32">
       <div className="w3-third">
         <p>Code</p>
-        <img src="assets/img/code.jpg" className="w3-round w3-margin-bottom" alt="code"  style={{'width':60 + '%'}}></img>
+        <img src="assets/img/code-2.jpg" className="w3-round w3-margin-bottom" alt="code"  style={{'width':60 + '%'}}></img>
       </div>
       <div className="w3-third">
         <p>Code</p>
-        <img src="assets/img/computer.jpg" className="w3-round w3-margin-bottom" alt="computer"  style={{'width':60 + '%'}}></img>
+        <img src="assets/img/code.jpg" className="w3-round w3-margin-bottom" alt="code"  style={{'width':60 + '%'}}></img>
       </div>
       <div className="w3-third">
         <p>Code</p>

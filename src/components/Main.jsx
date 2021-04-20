@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import {MainContext} from './Context';
 import About from './About';
 import Skills from './Skills';
@@ -12,10 +12,15 @@ const Main = (props) => {
 
     const [pickedHue, setpickedHue] = useState(Math.floor(Math.random() * 360))
 
+    useEffect(()=> {
+        store.setHueRotate(pickedHue)
+    },[ store, pickedHue ])
+
     const changeColor = () => {
     const randomNumber = Math.floor(Math.random() * 360)
     
     setpickedHue(randomNumber);
+    store.setHueRotate(randomNumber)
     }
 
     return ( 
