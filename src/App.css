@@ -127,9 +127,12 @@ svg {
 
 @media (max-width: 601px) {
  
+  .App-header h1 {
+    top: 7vh;
+  }
 .App-header h2 {
   color: var(--black);
-  top: 4vh;
+  top: -11vh;
   font-size: calc(10px + 9vmin)
 }
 .container-header-image-person {
@@ -146,5 +149,12 @@ svg {
   }
   .links-small-screen {
     display: flex;
+  }
+}
+
+@media (max-width: 384px) {
+  .App-header h2 {
+
+    top: -5vh;
   }
 }
