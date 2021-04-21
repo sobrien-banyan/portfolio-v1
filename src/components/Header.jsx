@@ -7,7 +7,9 @@ import SvgAnimation from './svgAnimation/SvgAnimation';
 const Header = (props) => {
   return (
     <header id="home" className="App-header">
+      <div className="goo-container">
       <Goo />
+      </div>
       <SvgAnimation/>
       <h2 className='header-web-text'>Web Developer</h2>
       <h2 className="App-logo">Under Construction</h2>

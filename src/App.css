@@ -120,7 +120,9 @@ svg {
 
 @media (max-width: 601px) {
  
- 
+ .goo-container {
+   display: none;
+ }
 
 .container-header-image-person {
   left: 64%;
