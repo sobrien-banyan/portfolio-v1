@@ -17,7 +17,7 @@ a {
 .hamburger {
   z-index: 10;
   position: fixed;
-  right: 12px;
+  right: 25px;
   top: 12px;
 }
 .small-nav {

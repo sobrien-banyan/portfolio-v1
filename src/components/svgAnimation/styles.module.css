@@ -22,6 +22,8 @@
 
   @media (max-width: 400px){
       .container {
+          padding: 0px;
           top: 39%;
+          left: 4%;
       }
   }
