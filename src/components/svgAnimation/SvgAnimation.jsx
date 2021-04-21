@@ -16,7 +16,7 @@ export default function SvgAnimation() {
   })
 
   return (
-    <div className={styles.container} onClick={() => toggle(!open)}>
+    <div className={styles.svgcontainer} onClick={() => toggle(!open)}>
       <animated.svg className={styles.svg} style={{ scale, opacity }} viewBox="0 0 1278 446">
         <defs>
           <filter id="water">
