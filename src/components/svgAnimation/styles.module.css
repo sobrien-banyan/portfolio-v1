@@ -1,0 +1,27 @@
+.svg {
+  width: 80%;
+  }
+  
+  .container {
+    padding: 14%;
+    width: 100%;
+    position: absolute;
+    left: 9%;
+
+  }
+  
+  @media (max-width: 993px){
+.svg {
+    width: 100%
+}
+.container {
+    padding: 5%;
+    left: 3%;
+}
+  }
+
+  @media (max-width: 400px){
+      .container {
+          top: 39%;
+      }
+  }

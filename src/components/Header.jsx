@@ -1,17 +1,19 @@
 import React from "react";
 import Navbar from "./Navbar";
+import PortfolioImg from './portfolioImg/PortfolioImg';
+import SvgAnimation from './svgAnimation/SvgAnimation';
 
 
 const Header = (props) => {
   return (
     <header id="home" className="App-header">
       <Navbar />
-      <h2>Web Developer</h2>
-      <h1>Sean OBrien</h1>
+      <SvgAnimation/>
+      <h2 className='header-web-text'>Web Developer</h2>
       <h2 className="App-logo">Under Construction</h2>
       <div className="container-header-image-person " id="about">
-        <img src="/assets/img/me-clock.jpg" alt="profile"></img>
-        <div className="w3-row ">
+        <PortfolioImg/>
+        <div className="w3-row icon-container">
           <div className="w3-quarter icon-hover">
               <a target="_top" rel="noopener noreferrer" href="mailto:ecosean1@gmail.com" >
 
