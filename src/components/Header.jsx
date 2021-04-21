@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Goo from './goo/Goo';
 import PortfolioImg from './portfolioImg/PortfolioImg';
 import SvgAnimation from './svgAnimation/SvgAnimation';
 
@@ -7,7 +7,7 @@ import SvgAnimation from './svgAnimation/SvgAnimation';
 const Header = (props) => {
   return (
     <header id="home" className="App-header">
-      <Navbar />
+      <Goo />
       <SvgAnimation/>
       <h2 className='header-web-text'>Web Developer</h2>
       <h2 className="App-logo">Under Construction</h2>

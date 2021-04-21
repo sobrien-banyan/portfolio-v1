@@ -40,14 +40,13 @@ const navCloser = () => {
           {/* <a href='#contact'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">CONTACT</button></a> */}
         </div>
 
-           
 
 
             <div className="hamburger  w3-hide-large" onClick={() => navHandler()}>
             <i className="fas fa-bars fa-2x" style={store.themeBoolean ? {color: '#dcdcdc'}: {color: '#161616'}}></i>
             </div>
 
-      <div className="w3-top">
+      <div className="w3-top large-navbar">
         <div className="w3-bar w3-card w3-hide-small w3-hide-medium" style={store.themeBoolean ? store.darkTheme : store.lightTheme}>
         
           <a href='#home'><button  className="w3-padding-large w3-button">HOME</button></a>
