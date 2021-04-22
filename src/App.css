@@ -62,7 +62,7 @@ a {
  justify-content: center;
  align-items: center;
  flex-direction: column;
-  background: url('assets/img/bay.jpg');
+  background: url('./assets/img/bay.jpg');
   background-size: cover;
 
 }

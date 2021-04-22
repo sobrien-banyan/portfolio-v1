@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useSpring, animated as anim } from 'react-spring'
+import { useSpring, animated as anim } from 'react-spring';
 import './styles.css'
 
 const fast = { tension: 1200, friction: 40 }
@@ -16,6 +16,8 @@ export default function Goo() {
   const [{ pos3 }] = useSpring(() =>({ pos3: pos2, config: slow }))
   // Effect for fetching mouse coordinates
   useEffect(() => {
+
+    
     // "set" updates the first spring, the other springs are bound and will follow.
     // It won't cause a new render pass and the animated values down in the view
     // will still naturally reflect animated changes.
@@ -26,6 +28,8 @@ export default function Goo() {
   // We render the view like always, but we're using animated.el whereever
   // animated values are being used. Just like with regular "native" springs this
   // makes elements transient.
+
+  
   return (
     <>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
