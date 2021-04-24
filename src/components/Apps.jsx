@@ -20,7 +20,7 @@ const Apps = () => {
       </div>
       <div className="w3-third" style={{filter: `hue-rotate(-${store.hueRotate}deg)`}}>
         <h5>Healthy Living</h5>
-       <a href='https://github.com/sobrien007/coolblue'> <img src="assets/img/healthyLiving.png" className="w3-round" alt="healthy living website" style={{'width':90 + '%'}}></img></a>
+       <a href='https://thirsty-kilby-a72701.netlify.app/'> <img src="assets/img/healthyLiving.png" className="w3-round" alt="healthy living website" style={{'width':90 + '%'}}></img></a>
         <p>Healthy Living is a site that uses HTML, CSS and jQuery/Ajax. </p>
       </div>
     </div>
