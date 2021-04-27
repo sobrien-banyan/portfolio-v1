@@ -11,7 +11,7 @@ const Apps = () => {
       <div className="w3-third" style={{filter: `hue-rotate(-${store.hueRotate}deg)`}}>
         <h5>Cool Blue</h5>
        <a href='https://thirsty-kilby-a72701.netlify.app/'> <img src="assets/img/coolBlueScreenShot.png" className="w3-round w3-margin-bottom" alt="cool blue"  style={{'width':90 + '%'}}></img></a>
-        <p>This site features a light/dark theme as well as three other themes. Built with HTML/CSS and jQuery/Ajax. The messaging system is simple and easy for the client to use.</p>
+        <p>Built with HTML/CSS and jQuery</p>
       </div>
       <div className="w3-third" style={{filter: `hue-rotate(-${store.hueRotate}deg)`}}>
         <h5>Persevere LMS</h5>
@@ -21,7 +21,7 @@ const Apps = () => {
       <div className="w3-third" style={{filter: `hue-rotate(-${store.hueRotate}deg)`}}>
         <h5>Healthy Living</h5>
        <a href='https://nostalgic-bhaskara-d714a4.netlify.app/'> <img src="assets/img/healthyLiving.png" className="w3-round" alt="healthy living website" style={{'width':90 + '%'}}></img></a>
-        <p>Healthy Living is a site that uses HTML, CSS and jQuery/Ajax. </p>
+        <p>This site features a light/dark theme as well as three other themes. Healthy Living is a site that uses HTML, CSS and jQuery. </p>
       </div>
     </div>
     </div> 
