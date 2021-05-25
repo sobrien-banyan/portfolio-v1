@@ -25,7 +25,7 @@ const Links = () => {
 
 
           <div className="link-icon icon-hover">
-           <a  target="_top" rel="noopener noreferrer" href='https://github.com/sobrien007'>
+           <a  target="_top" rel="noopener noreferrer" href='https://github.com/sobrien-banyan'>
                 <svg viewBox="0 0 128 128">
               <g fill="#dcdcdc">
                 <path
