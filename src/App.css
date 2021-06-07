@@ -84,6 +84,7 @@ top: 53vh;
 }
 .icon-container {
   visibility: visible;
+  width: 200px;
 }
 
 .icon-hover :hover{
@@ -97,7 +98,6 @@ svg {
 .links-small-screen {
   width: 100%;
   padding-top: 64px;
-  
   display: none;
   justify-content: space-evenly;
 }
