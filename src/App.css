@@ -17,17 +17,18 @@ a {
 .hamburger {
   z-index: 10;
   position: fixed;
-  right: 30px;
+  right: 16px;
   top: 12px;
 }
 .large-navbar {
   left: 50%;
+  z-index: 110 !important;
 }
 
 .small-nav {
   position: fixed;
   top: 0;
-  right: 14px;
+  right: 0;
   z-index: 9;
   display: flex;
   flex-direction: column;
@@ -40,31 +41,30 @@ a {
 }
 
 .App {
-  width: 100%;
-  
+  width: 100%; 
 }
 
 .App-logo {
+  position: relative;
+  top: 25vh;
   height: 30vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-   
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
   height: 66vh;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: url('./assets/img/bay.jpg');
   background-size: cover;
-
 }
 
 .header-web-text {
@@ -77,13 +77,15 @@ a {
 
 
 .container-header-image-person {
-position: absolute;
-z-index: 2;
-left: 8vw;
-top: 53vh;
+  position: relative;
+  top: 17vh;
+  right: 40vw;
+  z-index: 2;
 }
+
 .icon-container {
   visibility: visible;
+  max-width: 280px;
 }
 
 .icon-hover :hover{
@@ -117,22 +119,25 @@ svg {
   }
 }
 
+@media (max-width: 720px) {
+  .container-header-image-person {
+    right: 30vw;
+    }
+}
+
 @media (max-width: 601px) {
- 
  .goo-container {
    display: none;
  }
 
-.container-header-image-person {
-  left: 64%;
-  top: 57vh;
 
-}
 .App-logo {
   display: none;
-
 }
-
+.container-header-image-person {
+  left: 30vw;
+  top: 30vh;
+  }
  .icon-container {
    visibility: hidden;
  }
@@ -146,7 +151,9 @@ svg {
   .header-web-text {
     color: var(--black);
   }
-  
+  .container-header-image-person {
+    left: 25vw;
+    }
 }
 
 

@@ -1,30 +1,21 @@
 .svg {
-  width: 80%;
+  position: relative;
+  width: 100%;
+  height: auto;
+ 
   }
-  
   .svgcontainer {
-    padding: 14%;
-    width: 100%;
     position: absolute;
-    /* top: 39%; */
-    left: 9%;
-
+    top: 10vh;
+    z-index: 5;
+    width: 100%;
+    padding-left: 8%;
   }
   
   @media (max-width: 600px){
-.svg {
-    width: 100%
-}
-.svgcontainer {
-    padding: 5%;
-    left: 3%;
-    top: 39%;
-}
-  }
 
-  @media (max-width: 400px){
-      .svgcontainer {
-       
-          left: 4%;
-      }
+.svgcontainer {
+    top: 42%;
+    padding-left: 10%;
+}
   }
