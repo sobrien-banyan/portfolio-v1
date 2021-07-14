@@ -1,28 +1,25 @@
-import React, { useRef, useEffect } from 'react'
-import { useSpring, animated, to } from '@react-spring/web'
-import { useGesture } from 'react-use-gesture'
+import React, { useRef, useEffect } from "react";
+import { useSpring, animated, to } from "@react-spring/web";
+import { useGesture } from "react-use-gesture";
 
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 
-
-
-const calcX = (y, ly) => -(y - ly - window.innerHeight / 2) / 20
-const calcY = (x, lx) => (x - lx - window.innerWidth / 2) / 20
-
+const calcX = (y, ly) => -(y - ly - window.innerHeight / 2) / 20;
+const calcY = (x, lx) => (x - lx - window.innerWidth / 2) / 20;
 
 export default function PortfolioImg() {
   useEffect((e) => {
-    const preventDefault = (e) => e.preventDefault()
-    document.addEventListener('gesturestart', preventDefault)
-    document.addEventListener('gesturechange', preventDefault)
+    const preventDefault = (e) => e.preventDefault();
+    document.addEventListener("gesturestart", preventDefault);
+    document.addEventListener("gesturechange", preventDefault);
 
     return () => {
-      document.removeEventListener('gesturestart', preventDefault)
-      document.removeEventListener('gesturechange', preventDefault)
-    }
-  }, [])
+      document.removeEventListener("gesturestart", preventDefault);
+      document.removeEventListener("gesturechange", preventDefault);
+    };
+  }, []);
 
-  const domTarget = useRef(null)
+  const domTarget = useRef(null);
   const [{ x, y, rotateX, rotateY, rotateZ, zoom, scale }, api] = useSpring(
     () => ({
       rotateX: 0,
@@ -34,9 +31,7 @@ export default function PortfolioImg() {
       y: 0,
       config: { mass: 5, tension: 350, friction: 40 },
     })
-  )
-
-
+  );
 
   useGesture(
     {
@@ -53,29 +48,33 @@ export default function PortfolioImg() {
       onHover: ({ hovering }) =>
         !hovering && api.start({ rotateX: 0, rotateY: 0, scale: 1 }),
       onWheel: ({ event, offset: [, y] }) => {
-        event.preventDefault()
- 
+        event.preventDefault();
       },
     },
     { domTarget, eventOptions: { passive: false } }
-  )
+  );
   return (
     <div className={styles.container}>
       <animated.div
         ref={domTarget}
         className={styles.card}
         style={{
-          transform: 'perspective(600px)',
+          transform: "perspective(600px)",
           x,
           y,
           scale: to([scale, zoom], (s, z) => s + z),
           rotateX,
           rotateY,
           rotateZ,
-        }}>
-          <div style={{ backgroundImage: `url('assets/img/me-clock.jpg')`, backgroundSize: 'cover'}}></div>
-     
+        }}
+      >
+        <div
+          style={{
+            backgroundImage: `url('assets/img/me-clock.jpg')`,
+            backgroundSize: "cover",
+          }}
+        ></div>
       </animated.div>
     </div>
-  )
+  );
 }
