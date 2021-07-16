@@ -81,7 +81,6 @@ a {
   top: 17vh;
   right: 40vw;
   z-index: 2;
-  height: 131px;
 }
 
 .icon-container {
@@ -138,6 +137,7 @@ svg {
 .container-header-image-person {
   left: 30vw;
   top: 30vh;
+  height: 131px;
   }
  .icon-container {
    visibility: hidden;
