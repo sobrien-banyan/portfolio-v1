@@ -8,7 +8,6 @@ const Header = (props) => {
     <header id="home" className="App-header">
       <SvgAnimation />
       <h2 className="header-web-text">Web Developer</h2>
-      <h2 className="App-logo">Under Construction</h2>
       <div className="goo-container">
         <Goo />
       </div>
