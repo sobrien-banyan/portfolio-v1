@@ -8,7 +8,7 @@ const About = () => {
       <div className="w3-container w3-content w3-center w3-padding-64">
         <h2 className="w3-wide">ABOUT</h2>
         <p className="w3-opacity">
-          <i>lovein' code</i>
+          <i>lovin' code</i>
         </p>
         <p className="w3-justify">
           JavaScript Developer focused on learning the newest technologies,
