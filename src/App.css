@@ -71,7 +71,7 @@ a {
   position: relative;
   top: 32vh;
   right: 40vw;
-  z-index: 2;
+  z-index: 9;
 }
 
 .icon-container {
@@ -125,7 +125,6 @@ svg {
     display: flex;
   }
 }
-
 
 @media (max-width: 400px){
   .header-web-text {

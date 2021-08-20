@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Goo from "./goo/Goo";
 import PortfolioImg from "./portfolioImg/PortfolioImg";
 import SvgAnimation from "./svgAnimation/SvgAnimation";
 
 const Header = (props) => {
+  const [delayDisplay, setDelayDisplay] = useState(false);
+
+  setTimeout(() => {
+    setDelayDisplay(true);
+  }, 1000);
+
   return (
     <header id="home" className="App-header">
-      <SvgAnimation />
+      {delayDisplay && <SvgAnimation />}
       <h2 className="header-web-text">Web Developer</h2>
       <div className="goo-container">
         <Goo />
