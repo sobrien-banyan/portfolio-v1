@@ -21,7 +21,7 @@ const About = () => {
           used with a context provider to pass the state around. Giving the
           ability to change the sites theme for dark to light and back again.
           Click anywhere on the main and the hue will change. Have fun by
-          dragging my picture around or clicking on my name. I’m familiar with
+          dragging my picture around or clicking on my name. I’m familiar with Java,
           Ajax and express on the back-end. However it’s important to be
           agnostic when it comes to coding languages. My understanding of coding
           fundamentals has afforded me the opportunity to expand my coding
