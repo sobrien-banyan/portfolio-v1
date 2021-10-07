@@ -148,6 +148,8 @@ const Skills = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
+              width="128px"
+              height="128px"
             >
               <linearGradient
                 id="~pyEdb1_gylbP8MiKfO0Aa"
@@ -254,6 +256,8 @@ const Skills = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
+              width="128px"
+              height="128px"
             >
               <path
                 fill="#252f3e"
