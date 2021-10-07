@@ -147,9 +147,6 @@ const Skills = () => {
           <div className="w3-quarter w3-container w3-margin-bottom">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 64 64"
-              width="512px"
-              height="512px"
             >
               <linearGradient
                 id="~pyEdb1_gylbP8MiKfO0Aa"
@@ -255,9 +252,6 @@ const Skills = () => {
           <div className="w3-quarter w3-container w3-margin-bottom">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 48 48"
-              width="480px"
-              height="480px"
             >
               <path
                 fill="#252f3e"
