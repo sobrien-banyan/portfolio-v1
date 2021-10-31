@@ -16,7 +16,7 @@ const About = () => {
           implementing excellent coding practices and adding value to projects.
           Starting off in the wonderful world of HTML and CSS prepared me for the
           trenches of JavaScript. Having a comprehensive understanding of React
-          has allowed me to build some really cool applications. JavaScript
+          has allowed me to build some cool applications. JavaScript
           Coding challenges are a must for any coder and in doing so logic and
           reasoning are expanded. Now a little bit about this site. React is
           used with a context provider to pass the state around. Giving the
