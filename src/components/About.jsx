@@ -1,5 +1,6 @@
 import React from "react";
 import Links from "./Links";
+import GitHubContribution from "./GitHubContribution";
 
 const About = () => {
   return (
@@ -57,6 +58,7 @@ const About = () => {
             ></img>
           </div>
         </div>
+        <GitHubContribution/>
       </div>
     </div>
   );
