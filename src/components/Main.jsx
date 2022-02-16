@@ -3,7 +3,7 @@ import { MainContext } from "./Context";
 import About from "./About";
 import Skills from "./Skills";
 import Tools from "./Tools";
-import Apps from "./Apps";
+import Applications from "./Applications";
 import Footer from "./Footer";
 
 const Main = (props) => {
@@ -34,7 +34,7 @@ const Main = (props) => {
     >
       <About />
       <Skills />
-      <Apps />
+      <Applications />
       <Tools />
       <Footer />
     </main>

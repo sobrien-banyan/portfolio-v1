@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { MainContext } from "./Context";
 
-const Apps = () => {
+const Applications = () => {
   const store = useContext(MainContext);
 
   return (
@@ -22,7 +22,7 @@ const Apps = () => {
               style={{ width: 90 + "%" }}
             ></img>
           </a>
-          <p>Built with HTML/CSS and jQuery</p>
+          <p>First built with HTML/CSS and jQuery then converted to React.</p>
         </div>
         <div
           className="w3-third"
@@ -60,7 +60,7 @@ const Apps = () => {
           </a>
           <p>
             This site features a light/dark theme as well as three other themes.
-            Healthy Living is a site that uses HTML, CSS and jQuery.{" "}
+            Healthy Living is a site that was first built using HTML, CSS and jQuery then converted to React.{" "}
           </p>
         </div>
       </div>
@@ -68,4 +68,4 @@ const Apps = () => {
   );
 };
 
-export default Apps;
+export default Applications;

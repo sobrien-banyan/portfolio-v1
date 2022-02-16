@@ -317,7 +317,7 @@ const Tools = () => {
               href="https://github.com/sobrien-banyan"
             >
               <svg viewBox="0 0 128 128">
-                <g fill="#dcdcdc">
+                <g fill="#eeeded">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -426,8 +426,8 @@ const Tools = () => {
                   x1=".98"
                   id="jira-original-wordmark-a"
                 >
-                  <stop stop-color="#0052CC" offset=".176"></stop>
-                  <stop stop-color="#2684FF" offset="1"></stop>
+                  <stop stopColor="#0052CC" offset=".176"></stop>
+                  <stop stopColor="#2684FF" offset="1"></stop>
                 </linearGradient>
                 <linearGradient
                   y2=".46"
@@ -436,13 +436,13 @@ const Tools = () => {
                   x1="1.006"
                   id="jira-original-wordmark-b"
                 >
-                  <stop stop-color="#0052CC" offset=".176"></stop>
-                  <stop stop-color="#2684FF" offset="1"></stop>
+                  <stop stopColor="#0052CC" offset=".176"></stop>
+                  <stop stopColor="#2684FF" offset="1"></stop>
                 </linearGradient>
               </defs>
               <path
                 fill="#FFF"
-                fill-opacity=".012"
+                fillOpacity=".012"
                 d="M-.029 37h128v54h-128z"
               ></path>
               <path
@@ -487,7 +487,21 @@ const Tools = () => {
               ></path>
             </svg>
           </div>
-          <div className="w3-quarter w3-container w3-margin-bottom"></div>
+          <div className="w3-quarter w3-container w3-margin-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" version="1.1" preserveAspectRatio="xMidYMid">
+              <defs>
+                <linearGradient x1="49.9998025%" y1="100%" x2="49.9998025%" y2="0%" id="linearGradient-1">
+                  <stop stop-color="#7400E1" offset="0%" />
+                  <stop stop-color="#4000BF" offset="100%" />
+                </linearGradient>
+              </defs>
+              <g>
+                <path d="M128,249.4912 C195.0984,249.4912 249.492,195.0976 249.492,128 C249.492,60.90208 195.0984,6.508472 128,6.508472 C60.9024,6.508472 6.508792,60.90208 6.508792,128 C6.508792,195.0976 60.9024,249.4912 128,249.4912 Z" fill="#FFFFFF" fill-rule="nonzero" />
+                <path d="M128,0 C57.30752,0 0,57.30752 0,128 C0,198.6928 57.30752,256 128,256 C198.6928,256 256,198.6928 256,128 C256,57.30752 198.6928,0 128,0 Z M128,13.01696 C191.5032,13.01696 242.9832,64.49664 242.9832,128 C242.9832,191.5032 191.5032,242.9832 128,242.9832 C64.49664,242.9832 13.01696,191.5032 13.01696,128 C13.01696,64.49664 64.49664,13.01696 128,13.01696 Z" fill="#4000BF" fill-rule="nonzero" />
+                <path d="M129.4456,36.88136 C179.7696,36.88136 220.5648,77.67656 220.5648,128 C220.5648,178.3232 179.7696,219.1184 129.4456,219.1184 C79.12232,219.1184 38.32712,178.3232 38.32712,128 C38.32712,115.7016 40.76376,103.972 45.18064,93.2672 C51.62984,102.0496 62.03016,107.7512 73.76216,107.7512 C93.3328,107.7512 109.1968,91.8864 109.1968,72.3164 C109.1968,60.5844 103.496,50.18408 94.7128,43.73496 C105.4176,39.318 117.1472,36.88136 129.4456,36.88136 Z" fill="url(#linearGradient-1)" />
+              </g>
+            </svg>
+          </div>
           <div className="w3-quarter w3-container w3-margin-bottom"></div>
         </div>
       </div>
