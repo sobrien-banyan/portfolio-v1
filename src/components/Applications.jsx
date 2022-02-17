@@ -12,8 +12,33 @@ const Applications = () => {
           className="w3-third"
           style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
         >
+          <h5>Ondemand by SimplyHired</h5>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ondemand.simplyhired.com/">
+            {" "}
+            <img
+              src="assets/img/ondemand-SH.png"
+              className="w3-round"
+              alt="ondemand.com"
+              style={{ width: 90 + "%" }}
+            ></img>
+          </a>
+          <p>
+            Ondemand by SimplyHired offers an assortment of web services. Built with React and styled-component.
+            {" "}
+          </p>
+        </div>
+        <div
+          className="w3-third"
+          style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
+        >
           <h5>Cool Blue</h5>
-          <a href="https://thirsty-kilby-a72701.netlify.app/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://thirsty-kilby-a72701.netlify.app/">
             {" "}
             <img
               src="assets/img/coolBlueScreenShot.png"
@@ -24,6 +49,30 @@ const Applications = () => {
           </a>
           <p>First built with HTML/CSS and jQuery then converted to React.</p>
         </div>
+        <div
+          className="w3-third"
+          style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
+        >
+          <h5>Healthy Living</h5>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://nostalgic-bhaskara-d714a4.netlify.app/">
+            {" "}
+            <img
+              src="assets/img/healthyLiving.png"
+              className="w3-round"
+              alt="healthy living website"
+              style={{ width: 90 + "%" }}
+            ></img>
+          </a>
+          <p>
+            This site features a light/dark theme as well as three other themes.
+            Healthy Living is a site that was first built using HTML, CSS and jQuery then converted to React.{" "}
+          </p>
+        </div>
+      </div>
+      <div className="w3-row w3-padding-32">
         <div
           className="w3-third"
           style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
@@ -46,23 +95,10 @@ const Applications = () => {
         </div>
         <div
           className="w3-third"
-          style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
-        >
-          <h5>Healthy Living</h5>
-          <a href="https://nostalgic-bhaskara-d714a4.netlify.app/">
-            {" "}
-            <img
-              src="assets/img/healthyLiving.png"
-              className="w3-round"
-              alt="healthy living website"
-              style={{ width: 90 + "%" }}
-            ></img>
-          </a>
-          <p>
-            This site features a light/dark theme as well as three other themes.
-            Healthy Living is a site that was first built using HTML, CSS and jQuery then converted to React.{" "}
-          </p>
-        </div>
+        ></div>
+        <div
+          className="w3-third"
+        ></div>
       </div>
     </div>
   );
