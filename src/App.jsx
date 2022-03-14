@@ -9,10 +9,10 @@ import Navbar from "./components/Navbar";
 const App = () => {
 
   return (
-    <div  className="App " >
-           <Navbar />
+    <div className="App " >
+      <Navbar />
       <Header />
-      <Main/>
+      <Main />
     </div>
   );
 }

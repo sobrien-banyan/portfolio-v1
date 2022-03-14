@@ -126,6 +126,11 @@ svg {
   }
 }
 
+.videoRow {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 400px){
   .header-web-text {
     color: var(--black);
