@@ -6,7 +6,7 @@ const Video = ({ videoSourceMp4, videoSourceOgv }) => {
     return (
         <div  style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}>
             <video height="240" width="320" preload="auto" autoplay="autoplay" controls="controls" muted>
-                <source src={videoSourceOgv} type="video/ogg" />
+                {/* <source src={videoSourceOgv} type="video/ogg" /> */}
                 <source src={videoSourceMp4} type="video/mp4" />
             </video>
         </div>
