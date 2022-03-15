@@ -4,8 +4,8 @@ import GitHubContribution from "./GitHubContribution";
 import Video from "./Video";
 import tuckNRollMp4 from "../assets/videos/tuckNrollExit.mp4"
 import tuckNRollOgv from "../assets/videos/tuckNrollExit.ogv"
-import pageAzMp4 from "../assets/videos/pageAz.mp4"
-import pageAzOgv from "../assets/videos/pageAz.ogv"
+// import pageAzMp4 from "../assets/videos/pageAz.mp4"
+// import pageAzOgv from "../assets/videos/pageAz.ogv"
 
 const About = () => {
   return (
@@ -68,9 +68,9 @@ const About = () => {
           <div className="w3-third">
             <Video videoSourceMp4={tuckNRollMp4} videoSourceOgv={tuckNRollOgv} />
           </div>
-          <div className="w3-third">
+          {/* <div className="w3-third">
             <Video videoSourceMp4={pageAzMp4} videoSourceOgv={pageAzOgv} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
