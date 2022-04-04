@@ -3,7 +3,7 @@ import React from "react";
 const GitHubContribution = () => {
   return (
     <div className="w3-row w3-padding-32">
-      <p>947 GitHub Contributions</p>
+      <p>1002 GitHub Contributions</p>
       <a
         target="_blank"
         rel="noopener noreferrer"
