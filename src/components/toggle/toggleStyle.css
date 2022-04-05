@@ -1,0 +1,31 @@
+.toggleWrapper {
+    position: relative;
+    bottom: 5px;
+    margin: 10px;
+    width: 58px;
+}
+.toggleGooContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 30px;
+    border-radius: 15px;
+    background: pink;
+    cursor: pointer;
+    
+}
+.toggleGoo {
+    /* background: black; */
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    top: 3px;
+    width: 24px;
+}
+ 

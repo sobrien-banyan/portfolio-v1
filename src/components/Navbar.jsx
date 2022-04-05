@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import { MainContext } from "./Context";
+import Toggle from "./toggle/Toggle";
+import Goo from "./goo/Goo";
 
 const Navbar = () => {
   const store = useContext(MainContext);
@@ -64,16 +66,9 @@ const Navbar = () => {
             TOOLS
           </button>
         </a>
-        <button
-          onClick={() => {
-            store.setThemeBoolean(!store.themeBoolean);
-            navCloser();
-          }}
-          className="w3-padding-large w3-button"
-        >
-          <i className="fas fa-adjust"></i>
-        </button>
-        {/* <a href='#contact'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">CONTACT</button></a> */}
+        <div onClick={() => navCloser()}>
+          <Toggle />
+        </div>
       </div>
 
       <div className="hamburger  w3-hide-large" onClick={() => navHandler()}>
@@ -105,13 +100,8 @@ const Navbar = () => {
           <a href="#tools">
             <button className="w3-padding-large w3-button">TOOLS</button>
           </a>
-          <button
-            onClick={() => store.setThemeBoolean(!store.themeBoolean)}
-            className="w3-padding-large w3-button"
-          >
-            <i className="fas fa-adjust"></i>
-          </button>
-          {/* <a href='#contact'><button className="w3-padding-large w3-button">CONTACT</button></a> */}
+            <Toggle />
+            <Goo/>
         </div>
       </div>
     </div>
