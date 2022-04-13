@@ -98,6 +98,12 @@ svg {
  height: auto;
 }
 
+.videoRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;   
+}
+
 @media (max-width: 720px) {
   .container-header-image-person {
     right: 30vw;
@@ -124,12 +130,6 @@ svg {
   .links-small-screen {
     display: flex;
   }
-}
-
-.videoRow {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;   
 }
 
 @media (max-width: 400px){

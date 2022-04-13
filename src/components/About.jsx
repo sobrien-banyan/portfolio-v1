@@ -4,6 +4,7 @@ import GitHubContribution from "./GitHubContribution";
 import Video from "./Video";
 import tuckNRollMp4 from "../assets/videos/tuckNrollExit.mp4"
 import pageAzMp4 from "../assets/videos/pageAz.mp4"
+import GitHubStats from "./GitHubStats";
 
 const About = () => {
   return (
@@ -62,6 +63,7 @@ const About = () => {
           </div>
         </div>
         <GitHubContribution />
+        <GitHubStats />
         <div className="videoRow">
           <div className="w3-third">
             <Video videoSourceMp4={pageAzMp4} />
