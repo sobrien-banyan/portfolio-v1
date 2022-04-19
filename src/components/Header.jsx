@@ -19,7 +19,8 @@ const Header = (props) => {
       <div className="goo-container">
         <Goo />
       </div>
-      <div className="container-header-image-person " id="about">
+      {!store.randomNumber0or1 && <img className="moon-img" src="./assets/img/moon.png" alt="moon"/>}
+      <div className={store.randomNumber0or1 ? "container-header-image-person" : "container-header-image-person top-27"} id="about">
         <PortfolioImg />
         <div className="w3-row icon-container">
           <div className="w3-quarter icon-hover">
