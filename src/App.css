@@ -3,6 +3,7 @@
   --black: #161616;
   --white: #dcdcdc;
   --blue: #6531c5;
+  --planet: #425b9a;
 }
 
 .bg-black {
@@ -57,6 +58,16 @@ a {
   align-items: center;
   flex-direction: column;
   background: url('./assets/img/bay.jpg');
+  background-size: cover;
+}
+
+.App-header-2 {
+  height: 66vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('./assets/img/exoplanets.jpeg');
   background-size: cover;
 }
 

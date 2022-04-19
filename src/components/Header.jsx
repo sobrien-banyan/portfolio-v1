@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { MainContext } from "./Context";
 import Goo from "./goo/Goo";
 import PortfolioImg from "./portfolioImg/PortfolioImg";
 import SvgAnimation from "./svgAnimation/SvgAnimation";
 
 const Header = (props) => {
+  const store = useContext(MainContext);
   const [delayDisplay, setDelayDisplay] = useState(false);
 
   setTimeout(() => {
@@ -11,7 +13,7 @@ const Header = (props) => {
   }, 1000);
 
   return (
-    <header id="home" className="App-header">
+    <header id="home" className={store.randomNumber0or1 ? "App-header" : "App-header-2"}>
       {delayDisplay && <SvgAnimation />}
       <h2 className="header-web-text">Web Developer</h2>
       <div className="goo-container">

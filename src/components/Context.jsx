@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useMemo } from "react";
 export const MainContext = createContext();
 
 export const MainContextProvider = (props) => {
@@ -20,6 +20,7 @@ export const MainContextProvider = (props) => {
   });
   const [themeBoolean, setThemeBoolean] = useState(true);
   const [hueRotate, setHueRotate] = useState("");
+  const [randomNumber0or1] = useState(useMemo(() => Math.floor(Math.random() * 2), []));
 
   return (
     <MainContext.Provider
@@ -36,6 +37,7 @@ export const MainContextProvider = (props) => {
         setThemeBoolean,
         hueRotate,
         setHueRotate,
+        randomNumber0or1
       }}
     >
       {props.children}
