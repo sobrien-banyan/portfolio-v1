@@ -64,10 +64,10 @@ const About = () => {
         <GitHubContribution />
         <div className="videoRow">
           <div className="w3-third">
-            <Video videoSourceMp4={pageAzMp4} />
+            <Video videoSourceMp4={pageAzMp4} isAutoPlay={true} />
           </div>
           <div className="w3-third">
-            <Video videoSourceMp4={tuckNRollMp4} />
+            <Video videoSourceMp4={tuckNRollMp4} isAutoPlay={false} />
           </div>
         </div>
       </div>
