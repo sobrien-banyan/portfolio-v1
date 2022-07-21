@@ -10,19 +10,19 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(16, 16, 16);
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 code {
