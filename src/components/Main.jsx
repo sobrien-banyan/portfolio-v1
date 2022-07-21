@@ -9,14 +9,14 @@ import Footer from "./Footer";
 const Main = (props) => {
   const store = useContext(MainContext);
 
-  const [pickedHue, setpickedHue] = useState(Math.floor(Math.random() * 360));
+  const [pickedHue, setpickedHue] = useState(Math.floor(Math.random() * 160));
 
   useEffect(() => {
     store.setHueRotate(pickedHue);
   }, [store, pickedHue]);
 
   const changeColor = () => {
-    const randomNumber = Math.floor(Math.random() * 360);
+    const randomNumber = Math.floor(Math.random() * 160);
 
     setpickedHue(randomNumber);
     store.setHueRotate(randomNumber);
