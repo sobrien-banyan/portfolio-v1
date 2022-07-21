@@ -67,7 +67,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url('./assets/img/exoplanets.jpeg');
+  background: url('./assets/img/starbase.jpeg');
   background-size: cover;
 }
 
@@ -104,6 +104,8 @@ a {
 .icon-container {
   visibility: visible;
   max-width: 280px;
+  position: relative;
+  bottom: 13px;
 }
 
 .icon-hover :hover{
