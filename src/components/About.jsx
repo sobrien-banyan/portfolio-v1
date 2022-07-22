@@ -34,7 +34,6 @@ const About = () => {
         </p>
         <div className="w3-row w3-padding-32">
           <div className="w3-third">
-            <p>Eat Code</p>
             <img
               src="assets/img/code-2.jpg"
               className="w3-round w3-margin-bottom"
@@ -43,7 +42,6 @@ const About = () => {
             ></img>
           </div>
           <div className="w3-third">
-            <p>Drink Code</p>
             <img
               src="assets/img/code.jpg"
               className="w3-round w3-margin-bottom"
@@ -52,7 +50,6 @@ const About = () => {
             ></img>
           </div>
           <div className="w3-third">
-            <p>Dream Code</p>
             <img
               src="assets/img/code-1.jpg"
               className="w3-round"

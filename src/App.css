@@ -78,27 +78,12 @@ a {
   color: var(--white);
 }
 
-.moon-img {
-  position: relative;
-  z-index: 2;
-  border-radius: 50%;
-  width: auto;
-  height: 6vw;
-  left: 20%;
-  top: 10vh;
-  transform: rotate(189deg);
-}
-
 .container-header-image-person {
   position: relative;
   top: 32vh;
   right: 40vw;
   z-index: 9;
   padding-left: 10px;
-}
-
-.top-27 {
-  top: 27vh;
 }
 
 .icon-container {
