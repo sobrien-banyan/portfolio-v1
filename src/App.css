@@ -118,6 +118,10 @@ svg {
   flex-wrap: wrap;   
 }
 
+.codeImage {
+  width: 100%;
+}
+
 @media (max-width: 601px) {
  .goo-container {
    display: none;

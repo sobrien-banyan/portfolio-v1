@@ -32,33 +32,23 @@ const About = () => {
           horizons. May you enjoy this site and take an idea of my
           abilities with you.{" "}
         </p>
-        <div className="w3-row w3-padding-32">
+        <GitHubContribution />
+        <div className="videoRow w3-padding-32 w3-hide-small">
           <div className="w3-third">
             <img
               src="assets/img/code-2.jpg"
-              className="w3-round w3-margin-bottom"
+              className="w3-round w3-margin-bottom codeImage"
               alt="code"
-              style={{ width: 60 + "%" }}
-            ></img>
-          </div>
-          <div className="w3-third">
-            <img
-              src="assets/img/code.jpg"
-              className="w3-round w3-margin-bottom"
-              alt="code"
-              style={{ width: 60 + "%" }}
             ></img>
           </div>
           <div className="w3-third">
             <img
               src="assets/img/code-1.jpg"
-              className="w3-round"
+              className="w3-round codeImage"
               alt="code"
-              style={{ width: 60 + "%" }}
             ></img>
           </div>
         </div>
-        <GitHubContribution />
         <div className="videoRow">
           <div className="w3-third">
             <Video videoSourceMp4={pageAzMp4} isAutoPlay={true} />
