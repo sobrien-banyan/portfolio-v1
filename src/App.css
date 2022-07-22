@@ -138,14 +138,6 @@ svg {
    display: none;
  }
 
- @media (min-width: 500px) {
-  .App-header-2 {
-    background: url('./assets/img/starbase-small.jpeg');
-    background-size: cover;
-  }
- }
-
-
 .App-logo {
   display: none;
 }
@@ -162,5 +154,9 @@ svg {
   }
   .header-web-text {
     top: 15%;
+  }
+  .App-header-2 {
+    background: url('./assets/img/starbase-small.jpeg');
+    background-size: cover;
   }
 }
