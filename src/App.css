@@ -74,6 +74,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
   /* background: url('./assets/img/bay.jpg'); */
   /* background-size: cover; */
 }
