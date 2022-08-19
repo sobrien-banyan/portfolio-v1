@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
-import { MainContext } from "./Context";
+import React from "react";
 
 const Applications = () => {
-  const store = useContext(MainContext);
 
   return (
     <div className="w3-container w3-content w3-center w3-padding-64" id="apps">
@@ -10,7 +8,6 @@ const Applications = () => {
       <div className="w3-row w3-padding-32">
         <div
           className="w3-third"
-          style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
         >
           <h5>Ondemand by SimplyHired</h5>
           <a
@@ -32,7 +29,6 @@ const Applications = () => {
         </div>
         <div
           className="w3-third"
-          style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
         >
           <h5>Cool Blue</h5>
           <a
@@ -51,7 +47,6 @@ const Applications = () => {
         </div>
         <div
           className="w3-third"
-          style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
         >
           <h5>Healthy Living</h5>
           <a
@@ -75,7 +70,6 @@ const Applications = () => {
       <div className="w3-row w3-padding-32">
         <div
           className="w3-third"
-          style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}
         >
           <h5>Persevere LMS</h5>
           <img

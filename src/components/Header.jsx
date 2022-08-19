@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import { MainContext } from "./Context";
-import Goo from "./goo/Goo";
 import PortfolioImg from "./portfolioImg/PortfolioImg";
 import SvgAnimation from "./svgAnimation/SvgAnimation";
 
@@ -13,12 +12,10 @@ const Header = (props) => {
   }, 1000);
 
   return (
-    <header id="home" className={store.randomNumber0or1 ? "App-header" : "App-header-2"}>
+    <header id="home" className={store.themeBoolean ? "App-header bg-black" : "App-header bg-white"}>
       {delayDisplay && <SvgAnimation />}
-      <h2 className="header-web-text">Web Developer</h2>
-      <div className="goo-container">
-        <Goo />
-      </div>
+      <h2 className={store.themeBoolean ? "header-web-text white" : "header-web-text black"}>Web Developer</h2>
+      <div className={store.themeBoolean ? 'code-text code-black' : 'code-text white'}>Code</div>
       <div className={"container-header-image-person"} id="about">
         <PortfolioImg />
         <div className="w3-row icon-container">

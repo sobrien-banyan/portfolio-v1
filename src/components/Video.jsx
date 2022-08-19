@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
-import { MainContext } from "./Context";
+import React from "react";
 
 const Video = ({ videoSourceMp4, isAutoPlay }) => {
-    const store = useContext(MainContext);
     return (
-        <div style={{ filter: `hue-rotate(-${store.hueRotate}deg)` }}>
+        <div>
             <video height="240" width="320" preload="auto" autoPlay={isAutoPlay} controls="controls" muted>
                 <source src={videoSourceMp4} type="video/mp4" />
             </video>

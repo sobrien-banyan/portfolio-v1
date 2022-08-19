@@ -15,7 +15,7 @@ export const MainContextProvider = (props) => {
     color: "#dcdcdc",
   });
   const [darkThemeTwo, setDarkThemeTwo] = useState({
-    background: "#302f36",
+    background: "#1e1e20",
     color: "#dcdcdc",
   });
   const [themeBoolean, setThemeBoolean] = useState(true);

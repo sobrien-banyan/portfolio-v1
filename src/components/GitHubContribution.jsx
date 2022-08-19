@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MainContext } from "./Context";
 
 const GitHubContribution = () => {
+  const store = useContext(MainContext);
   return (
-    <div className="w3-row w3-padding-32">
+    <div className="w3-row w3-padding-32 gitHub-Contributions" style={{ filter: `hue-rotate(${store.hueRotate}deg)` }}>
       <p>1867 Total GitHub Contributions</p>
       <a
         target="_blank"

@@ -4,10 +4,23 @@
   --white: #dcdcdc;
   --blue: #6531c5;
   --planet: #425b9a;
+  --codeBlack: #212529;
 }
 
 .bg-black {
   background: var(--black);
+}
+.bg-background {
+  background: var(--white);
+}
+.white {
+  color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.code-black {
+  color: var(--codeBlack);
 }
 
 a {
@@ -24,6 +37,10 @@ a {
 .large-navbar {
   left: 50%;
   z-index: 110 !important;
+}
+.gitHub-Contributions {
+  position: relative;
+  z-index: 10;
 }
 
 .small-nav {
@@ -52,17 +69,17 @@ a {
 }
 
 .App-header {
-  height: 66vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url('./assets/img/bay.jpg');
-  background-size: cover;
+  /* background: url('./assets/img/bay.jpg'); */
+  /* background-size: cover; */
 }
 
 .App-header-2 {
-  height: 66vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,12 +92,17 @@ a {
   position: absolute;
   top: 35%;
   font-size: calc(8px + 5vmin);
-  color: var(--white);
+  z-index: 2;
+}
+
+.code-text {
+  font-size: 58vw;
+  position: absolute;
 }
 
 .container-header-image-person {
   position: relative;
-  top: 32vh;
+  top: 22vh;
   right: 40vw;
   z-index: 9;
   padding-left: 10px;
@@ -112,10 +134,20 @@ svg {
   height: auto;
 }
 
+.About {
+  position: relative;
+}
+.goo-container {
+  height: 100%;
+  width: 100%;
+}
+
 .videoRow {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;   
+  position: relative;
+  z-index: 10;
 }
 
 .codeImage {
