@@ -155,7 +155,7 @@ svg {
   width: 100%;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 650px) {
  .goo-container {
    display: none;
  }
