@@ -10,15 +10,13 @@ import Goo from './goo/Goo';
 const About = () => {
   const store = useContext(MainContext);
   return (
-    <div className='About'>
+    <div className='about-section'>
       <Links />
       <div className="w3-container w3-content w3-center w3-padding-64">
-        <h2 className="w3-wide">ABOUT</h2>
-        <p className="w3-opacity">
-          <i>lovin' code</i>
-        </p>
+        <h2 className="w3-wide w3-center w3-margin-bottom">ABOUT</h2>
+        <br/>
         <p className="w3-justify">
-          JavaScript Developer focused on learning the newest technologies,
+          Web Developer focused on learning the newest technologies,
           implementing excellent coding practices, and adding value to projects.
           Starting in the wonderful world of HTML and CSS prepared me for the
           trenches of JavaScript. Having a comprehensive understanding of React
