@@ -72,12 +72,18 @@ const Applications = () => {
           className="w3-third"
         >
           <h5>Persevere LMS</h5>
-          <img
-            src="assets/img/persevereLMS1.jpg"
-            className="w3-round w3-margin-bottom"
-            alt="Perseveres LMS"
-            style={{ width: 90 + "%" }}
-          ></img>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/sobrien-banyan/persevere-lms"
+          >
+            <img
+              src="assets/img/persevereLMS1.jpg"
+              className="w3-round w3-margin-bottom"
+              alt="Perseveres LMS"
+              style={{ width: 90 + "%" }}
+            ></img>
+          </a>
           <p>
             In this project we used MVC for the file structure and React for the
             Front-end framework. Context/API was used for state management.
