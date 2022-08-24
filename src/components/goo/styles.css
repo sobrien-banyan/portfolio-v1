@@ -28,20 +28,35 @@
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     opacity: 0.6;
   }
+
+  .b1-safari,
+  .b2-safari,
+  .b3-safari {
+    position: absolute;
+    will-change: transform;
+    border-radius: 50%;
+    background: #1e201f;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background: radial-gradient(circle at center, #eee, #eee 50%, #333 75%, #eee 75%);
+  }
   
   .b1,
-  .b1-planet {
+  .b1-planet,
+  .b1-safari {
     width: 125px;
     height: 125px;
   }
   
   .b2,
-  .b2-planet {
+  .b2-planet,
+  .b2-safari {
     width: 250px;
     height: 250px;
   }
   
-  .b3, .b3-planet {
+  .b3, 
+  .b3-planet, 
+  .b3-safari {
     width: 150px;
     height: 150px;
   }

@@ -1,5 +1,4 @@
-import React, { useEffect, useContext } from "react";
-import { MainContext } from "../Context";
+import React, { useEffect } from "react";
 import { useSpring, animated as anim } from "react-spring";
 import "./styles.css";
 
@@ -8,7 +7,6 @@ const slow = { mass: 10, tension: 200, friction: 50 };
 const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`;
 
 export default function Goo() {
-  const store = useContext(MainContext);
   // Here we form a natural trail, one spring following another.
   // You can either update springs by overwriting values when you re-render the component.
   // Or you can use the set function, which allows you to bypass React alltogether.
@@ -42,9 +40,9 @@ export default function Goo() {
       </svg>
       <div className="hooks-main">
         <div className="hooks-filter">
-          <anim.div className={store.randomNumber0or1 ? "b1" : "b1-planet"} style={{ transform: pos3.to(trans) }} />
-          <anim.div className={store.randomNumber0or1 ? "b2" : "b2-planet"} style={{ transform: pos2.to(trans) }} />
-          <anim.div className={store.randomNumber0or1 ? "b2" : "b2-planet"} style={{ transform: pos1.to(trans) }} />
+          <anim.div className={"b1-safari"} style={{ transform: pos3.to(trans) }} />
+          <anim.div className={"b1-safari"} style={{ transform: pos2.to(trans) }} />
+          <anim.div className={"b1-safari"} style={{ transform: pos1.to(trans) }} />
         </div>
       </div>
     </>

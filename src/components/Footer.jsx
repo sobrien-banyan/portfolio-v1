@@ -14,8 +14,8 @@ const Footer = () => {
           href="https://www.w3schools.com/w3css/default.asp"
           title="W3.CSS"
           target="_blank"
-          rel="noreferrer"
           className="w3-hover-text-green"
+          rel="noopener noreferrer"
         >
           w3Schools
         </a>{" "}
