@@ -162,6 +162,15 @@ svg {
   width: 100%;
 }
 
+#apps img {
+  width: 100%;
+}
+
+.app-row-end {
+  display: flex;
+  justify-content: flex-end !important;
+}
+
 @media (max-width: 650px) {
  .goo-container {
    display: none;

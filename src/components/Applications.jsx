@@ -7,7 +7,7 @@ const Applications = () => {
       <h2 className="w3-wide">APPLICATIONS</h2>
       <div className="w3-row w3-padding-32">
         <div
-          className="w3-third"
+          className="w3-half"
         >
           <h5>Ondemand by SimplyHired</h5>
           <a
@@ -19,7 +19,6 @@ const Applications = () => {
               src="assets/img/ondemand-SH.png"
               className="w3-round"
               alt="ondemand.com"
-              style={{ width: 90 + "%" }}
             ></img>
           </a>
           <p>
@@ -27,8 +26,11 @@ const Applications = () => {
             {" "}
           </p>
         </div>
+      </div>
+
+      <div className="w3-row w3-padding-32 app-row-end">
         <div
-          className="w3-third"
+          className="w3-half"
         >
           <h5>Cool Blue</h5>
           <a
@@ -40,13 +42,15 @@ const Applications = () => {
               src="assets/img/coolBlueScreenShot.png"
               className="w3-round w3-margin-bottom"
               alt="cool blue"
-              style={{ width: 90 + "%" }}
             ></img>
           </a>
           <p>First built with HTML/CSS and jQuery then converted to React.</p>
         </div>
+      </div>
+
+      <div className="w3-row w3-padding-32">
         <div
-          className="w3-third"
+          className="w3-half"
         >
           <h5>Healthy Living</h5>
           <a
@@ -58,7 +62,6 @@ const Applications = () => {
               src="assets/img/healthyLiving.png"
               className="w3-round"
               alt="healthy living website"
-              style={{ width: 90 + "%" }}
             ></img>
           </a>
           <p>
@@ -67,9 +70,10 @@ const Applications = () => {
           </p>
         </div>
       </div>
-      <div className="w3-row w3-padding-32">
+
+      <div className="w3-row w3-padding-32 app-row-end">
         <div
-          className="w3-third"
+          className="w3-half"
         >
           <h5>Persevere LMS</h5>
           <a
@@ -81,7 +85,6 @@ const Applications = () => {
               src="assets/img/persevereLMS1.jpg"
               className="w3-round w3-margin-bottom"
               alt="Perseveres LMS"
-              style={{ width: 90 + "%" }}
             ></img>
           </a>
           <p>
@@ -93,12 +96,6 @@ const Applications = () => {
             Back-end code. This was a huge project that took months to complete.
           </p>
         </div>
-        <div
-          className="w3-third"
-        ></div>
-        <div
-          className="w3-third"
-        ></div>
       </div>
     </div>
   );
