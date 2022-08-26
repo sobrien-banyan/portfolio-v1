@@ -19,6 +19,7 @@ const Applications = () => {
               src="assets/img/ondemand-SH.png"
               className="w3-round"
               alt="ondemand.com"
+              loading="lazy"
             ></img>
           </a>
           <p>
@@ -42,6 +43,7 @@ const Applications = () => {
               src="assets/img/coolBlueScreenShot.png"
               className="w3-round w3-margin-bottom"
               alt="cool blue"
+              loading="lazy"
             ></img>
           </a>
           <p>First built with HTML/CSS and jQuery then converted to React.</p>
@@ -62,6 +64,7 @@ const Applications = () => {
               src="assets/img/healthyLiving.png"
               className="w3-round"
               alt="healthy living website"
+              loading="lazy"
             ></img>
           </a>
           <p>
@@ -85,6 +88,7 @@ const Applications = () => {
               src="assets/img/persevereLMS1.jpg"
               className="w3-round w3-margin-bottom"
               alt="Perseveres LMS"
+              loading="lazy"
             ></img>
           </a>
           <p>

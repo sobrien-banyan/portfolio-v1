@@ -41,6 +41,7 @@ const About = () => {
               src="assets/img/code-2.jpg"
               className="w3-round w3-margin-bottom codeImage"
               alt="code"
+              loading="lazy"
             ></img>
           </div>
           <div className="w3-third" style={{ filter: `hue-rotate(${store.hueRotate}deg)` }}>
@@ -48,12 +49,13 @@ const About = () => {
               src="assets/img/code-1.jpg"
               className="w3-round codeImage"
               alt="code"
+              loading="lazy"
             ></img>
           </div>
         </div>
         <div className="videoRow">
           <div className="w3-third">
-            <Video videoSourceMp4={pageAzMp4} isAutoPlay={true} />
+            <Video videoSourceMp4={pageAzMp4} isAutoPlay={false} />
           </div>
           <div className="w3-third">
             <Video videoSourceMp4={tuckNRollMp4} isAutoPlay={false} />

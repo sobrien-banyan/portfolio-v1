@@ -16,6 +16,7 @@ const GitHubContribution = () => {
           className="w3-round w3-margin-bottom"
           alt="GitHub Contirbution"
           style={{ width: 100 + "%" }}
+          loading="lazy"
         ></img>
       </a>
     </div>
