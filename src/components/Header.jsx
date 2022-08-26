@@ -9,7 +9,7 @@ const Header = (props) => {
 
   setTimeout(() => {
     setDelayDisplay(true);
-  }, 1000);
+  }, 500);
 
   return (
     <header id="home" className={store.themeBoolean ? "App-header bg-black" : "App-header bg-white"}>
