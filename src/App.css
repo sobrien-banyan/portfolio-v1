@@ -64,7 +64,7 @@ a {
 
 .App main {
   position: relative;
-  Z-index: 2;
+  z-index: 2;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -80,18 +80,6 @@ a {
   align-items: center;
   flex-direction: column;
   position: relative;
-  /* background: url('./assets/img/bay.jpg'); */
-  /* background-size: cover; */
-}
-
-.App-header-2 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: url('./assets/img/starbase.jpeg');
-  background-size: cover;
 }
 
 .header-web-text {
@@ -123,7 +111,7 @@ a {
 }
 
 .icon-hover :hover{
-transform: scale(1.1);
+transform: scale(1.1, 1.1);
 }
 
 svg {
@@ -191,8 +179,5 @@ svg {
   .header-web-text {
     top: 15%;
   }
-  .App-header-2 {
-    background: url('./assets/img/starbase-small.jpeg');
-    background-size: cover;
-  }
+
 }

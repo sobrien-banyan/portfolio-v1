@@ -18,7 +18,7 @@ export const MainContextProvider = (props) => {
     background: "#1e1e20",
     color: "#dcdcdc",
   });
-  const [themeBoolean, setThemeBoolean] = useState(true);
+  const [themeBoolean, setThemeBoolean] = useState(false);
   const [hueRotate, setHueRotate] = useState("");
   const [randomNumber0or1] = useState(useMemo(() => Math.floor(Math.random() * 2), []));
 
