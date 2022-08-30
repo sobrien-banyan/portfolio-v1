@@ -98,9 +98,9 @@ a {
 .container-header-image-person {
   position: absolute;
   bottom: 6vh;
-  left: 4vw;
+  left: 5vw;
   z-index: 99;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .icon-container {
@@ -110,9 +110,9 @@ a {
   bottom: -8px;
 }
 
-.icon-hover :hover{
+/* .icon-hover :hover{
 transform: scale(1.1, 1.1);
-}
+} */
 
 svg {
   overflow: visible !important;
