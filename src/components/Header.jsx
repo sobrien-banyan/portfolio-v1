@@ -14,7 +14,6 @@ const Header = (props) => {
   return (
     <header id="home" className={store.themeBoolean ? "App-header bg-black" : "App-header bg-white"}>
       {delayDisplay && <SvgAnimation />}
-      <h2 className={store.themeBoolean ? "header-web-text white" : "header-web-text black"}>Web Developer</h2>
       <div className={store.themeBoolean ? 'code-text code-black' : 'code-text white'}>Code</div>
       <div className={"container-header-image-person"} id="about">
         <PortfolioImg />

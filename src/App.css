@@ -83,10 +83,8 @@ a {
 }
 
 .header-web-text {
-  position: absolute;
-  top: 35%;
-  font-size: calc(8px + 5vmin);
-  z-index: 2;
+  font-size: calc(8px + 6vmin);
+  padding-top: 8vh;
 }
 
 .code-text {
@@ -100,7 +98,6 @@ a {
   bottom: 6vh;
   left: 5vw;
   z-index: 99;
-  /* padding-left: 10px; */
 }
 
 .icon-container {
@@ -109,10 +106,6 @@ a {
   position: relative;
   bottom: -8px;
 }
-
-/* .icon-hover :hover{
-transform: scale(1.1, 1.1);
-} */
 
 svg {
   overflow: visible !important;
@@ -169,15 +162,13 @@ svg {
 }
 .container-header-image-person {
   height: 131px;
+  bottom: 8vh;
   }
  .icon-container {
    visibility: hidden;
  }
   .links-small-screen {
     display: flex;
-  }
-  .header-web-text {
-    top: 15%;
   }
 
 }

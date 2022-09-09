@@ -1,13 +1,20 @@
 .svg {
-  position: relative;
-  width: 100%;
-  height: auto;
- 
+  cursor: pointer;
   }
-  .svgcontainer {
-    position: absolute;
-    top: 10vh;
+
+  .svgwrapper {
+    align-items: center;
+    bottom: 8vh;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    position: relative;
+    width: 100%;
     z-index: 5;
+  }
+
+  .svgcontainer {
     width: 100%;
     padding-left: 8%;
   }
@@ -15,7 +22,6 @@
   @media (max-width: 650px){
 
 .svgcontainer {
-    top: 24%;
     padding-left: 10%;
 }
   }
