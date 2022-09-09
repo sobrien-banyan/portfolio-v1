@@ -78,7 +78,7 @@ const Navbar = () => {
 
       <div className="hamburger  w3-hide-large" onClick={() => navHandler()}>
         <i
-          className="fas fa-bars fa-2x"
+          className="fas fa-arrow-circle-down fa-2x"
           style={
             store.themeBoolean ? { color: "#dcdcdc" } : { color: "#161616" }
           }
