@@ -17,6 +17,7 @@ const Navbar = () => {
   };
 
   const navCloser = () => {
+    setToggle(true);
     setSmallNav("w3-hide w3-hide-large small-nav");
   };
 
