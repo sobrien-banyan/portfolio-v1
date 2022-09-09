@@ -28,11 +28,15 @@ a {
   color: inherit;
 }
 
-.hamburger {
-  z-index: 10;
+.nav-button {
+  z-index: 111;
   position: fixed;
   right: 16px;
   top: 12px;
+}
+.nav-button-rotate {
+  transform: rotate(180deg);
+  transition-duration: 1500ms;
 }
 .large-navbar {
   left: 50%;

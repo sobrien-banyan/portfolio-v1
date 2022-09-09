@@ -5,8 +5,10 @@ const Navbar = () => {
   const store = useContext(MainContext);
 
   const [smallNav, setSmallNav] = useState("w3-hide w3-hide-large small-nav");
+  const [toggle, setToggle] = useState(true);
 
   const navHandler = () => {
+    setToggle(!toggle);
     if (smallNav === "w3-hide w3-hide-large small-nav") {
       setSmallNav("w3-hide-large small-nav");
     } else {
@@ -76,9 +78,9 @@ const Navbar = () => {
         {/* <a href='#contact'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">CONTACT</button></a> */}
       </div>
 
-      <div className="hamburger  w3-hide-large" onClick={() => navHandler()}>
+      <div className="nav-button  w3-hide-large" onClick={() => navHandler()}>
         <i
-          className="fas fa-arrow-circle-down fa-2x"
+          className={toggle ? "fas fa-arrow-circle-down fa-2x" : "fas fa-arrow-circle-down fa-2x nav-button-rotate"}
           style={
             store.themeBoolean ? { color: "#dcdcdc" } : { color: "#161616" }
           }
