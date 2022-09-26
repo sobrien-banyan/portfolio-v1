@@ -16,7 +16,7 @@ const About = () => {
         <h2 className="w3-wide w3-center w3-margin-bottom">ABOUT</h2>
         <br />
         <p className="w3-justify">
-        Web Developer focused on learning the newest technologies, implementing excellent coding practices, and adding value to projects. Proficient in React, Redux, Typescript, and Java along with other coding languages and libraries. Currently attending Columbia University learning Python and Django. Consistently writing clean code. Works alongside other developers on various projects. Creating and maintaining large code bases. Now a little bit about this site. React is used with a context provider to pass the state around. Have fun by dragging the profile picture around or clicking on the name in the header. May you enjoy this site.
+        Software Engineer focused on implementing excellent coding practices, adding value to projects, and learning the newest technologies. Proficient in React, Redux, Typescript, and Java along with other coding languages and libraries. Currently attending Columbia University learning Python and Django. Consistently writing clean code. Works alongside other developers on various projects. Creating and maintaining large code bases. Now a little bit about this site. React is used with a context provider to pass the state around. Have fun by dragging the profile picture around or clicking on the name in the header. May you enjoy this site.
         </p>
         <GitHubContribution />
         <div className="goo-container">

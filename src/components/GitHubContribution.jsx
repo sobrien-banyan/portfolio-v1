@@ -5,7 +5,7 @@ const GitHubContribution = () => {
   const store = useContext(MainContext);
   return (
     <div className="w3-row w3-padding-32 gitHub-Contributions" style={{ filter: `hue-rotate(${store.hueRotate}deg)` }}>
-      <p>2023 Total GitHub Contributions</p>
+      <p>2128 Total GitHub Contributions</p>
       <a
         target="_blank"
         rel="noopener noreferrer"
