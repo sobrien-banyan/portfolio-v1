@@ -54,7 +54,7 @@ export default function SvgAnimation() {
           </g>
         </animated.svg>
       </div>
-      <h2 className={store.themeBoolean ? "header-web-text white" : "header-web-text black"}>Web Developer</h2>
+      <h2 className={store.themeBoolean ? "header-web-text white" : "header-web-text black"}>Software Engineer</h2>
     </div>
   );
 }
