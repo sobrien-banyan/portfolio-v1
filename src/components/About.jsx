@@ -4,7 +4,7 @@ import Links from "./Links";
 import GitHubContribution from "./GitHubContribution";
 import Video from "./Video";
 import tuckNRollMp4 from "../assets/videos/tuckNrollExit.mp4";
-import pageAzMp4 from "../assets/videos/pageAz.mp4";
+import mountLemmon from "../assets/videos/mountLemmon.mp4";
 import Goo from './goo/Goo';
 
 const About = () => {
@@ -42,10 +42,10 @@ const About = () => {
         </div>
         <div className="videoRow">
           <div className="w3-third">
-            <Video videoSourceMp4={pageAzMp4} isAutoPlay={false} />
+            <Video videoSourceMp4={tuckNRollMp4} isAutoPlay={false} />
           </div>
           <div className="w3-third">
-            <Video videoSourceMp4={tuckNRollMp4} isAutoPlay={false} />
+            <Video videoSourceMp4={mountLemmon} isAutoPlay={false} />
           </div>
         </div>
       </div>
