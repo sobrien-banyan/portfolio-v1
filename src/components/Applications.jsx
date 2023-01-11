@@ -37,7 +37,7 @@ const Applications = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://thirsty-kilby-a72701.netlify.app/">
+            href="https://cool-blue.netlify.app/">
             {" "}
             <img
               src="assets/img/coolBlueScreenShot.png"
@@ -58,7 +58,7 @@ const Applications = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://nostalgic-bhaskara-d714a4.netlify.app/">
+            href="https://healthy-living-jo.netlify.app/">
             {" "}
             <img
               src="assets/img/healthyLiving.png"
