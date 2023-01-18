@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
+import { MainContext } from "./Context";
 
 const Footer = () => {
+
+  const store = useContext(MainContext);
   return (
-    <footer className="w3-container w3-padding-32 w3-center">
+    <footer className="w3-container w3-padding-32 w3-center" style={store.themeBoolean ? store.darkTheme : store.lightTheme}>
       <a href="#home" className="w3-button w3-margin">
         <i className="fas fa-arrow-up w3-margin-right"></i>To the top
       </a>

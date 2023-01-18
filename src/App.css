@@ -34,6 +34,16 @@ a {
   right: 16px;
   top: 12px;
 }
+
+@media (min-width: 1350px) {
+  .nav-button {
+    display: none;
+  }
+  .small-nav-hide {
+    display: none;
+  }
+}
+
 .nav-button-rotate {
   transform: rotate(180deg);
   transition-duration: 1500ms;
@@ -42,6 +52,13 @@ a {
   left: 50%;
   z-index: 110 !important;
 }
+
+@media (max-width: 1350px) {
+  .large-navbar {
+    display: none;
+  }
+}
+
 .gitHub-Contributions {
   position: relative;
   z-index: 10;
@@ -293,4 +310,14 @@ svg {
 @-ms-keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+#snake-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snake-start-btn {
+  width: 400px;
 }

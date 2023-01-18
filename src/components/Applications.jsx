@@ -47,8 +47,8 @@ const Applications = () => {
         <a href={slides[index].link} target='_blank' rel="noopener noreferrer"> <h3>{slides[index].title}</h3></a>
         <br/>
         {slides.length && slides.map((obj, arrayIndex) => index === arrayIndex ? (
-          <a href={obj.link} target='_blank' rel="noopener noreferrer">
-          <div key={obj.url} className="mySlide fade-in-image">
+          <a key={obj.url} href={obj.link} target='_blank' rel="noopener noreferrer">
+          <div  className="mySlide fade-in-image">
             <div className="numbertext">{index + 1} / {slides.length}</div>
             <img src={obj.url} alt={obj.caption} loading="lazy"/>
           </div>

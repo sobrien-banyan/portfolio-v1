@@ -4,6 +4,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Tools from "./Tools";
 import Applications from "./Applications";
+import Snake from "./snake/Snake";
 import Footer from "./Footer";
 
 const Main = (props) => {
@@ -28,6 +29,7 @@ const Main = (props) => {
       <Skills />
       <Applications />
       <Tools />
+      <Snake />
       <Footer />
     </main>
   );

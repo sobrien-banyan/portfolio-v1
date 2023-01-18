@@ -4,27 +4,21 @@ import { MainContext } from "./Context";
 const Navbar = () => {
   const store = useContext(MainContext);
 
-  const [smallNav, setSmallNav] = useState("w3-hide w3-hide-large small-nav");
   const [toggle, setToggle] = useState(true);
 
   const navHandler = () => {
     setToggle(!toggle);
-    if (smallNav === "w3-hide w3-hide-large small-nav") {
-      setSmallNav("w3-hide-large small-nav");
-    } else {
-      setSmallNav("w3-hide w3-hide-large small-nav");
-    }
   };
 
   const navCloser = () => {
     setToggle(true);
-    setSmallNav("w3-hide w3-hide-large small-nav");
   };
 
   return (
     <div>
-      <div
-        className={smallNav}
+      <div className='small-nav-hide'>
+      {!toggle && <div
+        className='small-nav'
         style={store.themeBoolean ? store.darkTheme : store.lightTheme}
       >
         <a href="#home">
@@ -67,6 +61,14 @@ const Navbar = () => {
             TOOLS
           </button>
         </a>
+        <a href="#snake-game" className="w3-hide-small">
+          <button
+            onClick={() => navCloser()}
+            className="w3-padding-large w3-button"
+          >
+            SNAKE GAME
+          </button>
+        </a>
         <button
           onClick={() => {
             store.setThemeBoolean(!store.themeBoolean);
@@ -77,9 +79,10 @@ const Navbar = () => {
           <i className="fas fa-adjust"></i>
         </button>
         {/* <a href='#contact'><button onClick={() => navCloser()}  className="w3-padding-large w3-button">CONTACT</button></a> */}
+      </div>}
       </div>
 
-      <div className="nav-button  w3-hide-large" onClick={() => navHandler()}>
+      <div className="nav-button " onClick={() => navHandler()}>
         <i
           className={toggle ? "fas fa-arrow-circle-down fa-2x" : "fas fa-arrow-circle-down fa-2x nav-button-rotate"}
           style={
@@ -90,7 +93,7 @@ const Navbar = () => {
 
       <div className="w3-top large-navbar">
         <div
-          className="w3-bar w3-card w3-hide-small w3-hide-medium"
+          className="w3-bar w3-card"
           style={store.themeBoolean ? store.darkTheme : store.lightTheme}
         >
           <a href="#home">
@@ -107,6 +110,9 @@ const Navbar = () => {
           </a>
           <a href="#tools">
             <button className="w3-padding-large w3-button">TOOLS</button>
+          </a>
+          <a href="#snake-game">
+            <button className="w3-padding-large w3-button">SNAKE GAME</button>
           </a>
           <button
             onClick={() => store.setThemeBoolean(!store.themeBoolean)}
