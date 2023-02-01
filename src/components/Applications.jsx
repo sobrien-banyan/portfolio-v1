@@ -42,7 +42,7 @@ const Applications = () => {
 
   useEffect(() => {
     if (isCycle) {
-      time % 3 == 0 && setIndex(index < 3 ? index + 1 : 0)
+      time % 3 === 0 && setIndex(index < 3 ? index + 1 : 0)
     };
   }, [time]);
 
