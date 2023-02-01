@@ -14,7 +14,7 @@ const Form = () => {
                 <input type="hidden" name="form-name" value="contact" />.
                     <div className="w3-section">
                         <label>Name</label>
-                        <input value='some big value for name' className="w3-input" type="text" name="name" required />
+                        <input className="w3-input" type="text" name="name" required />
                     </div>
                     <div className="w3-section">
                         <label>Email</label>
