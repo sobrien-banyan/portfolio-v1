@@ -18,6 +18,8 @@ const Snake = () => {
     const start = () => {
         document.addEventListener('keydown', keyPush);
         setInterval(game, 1000 / 15);
+        canv = document.getElementById('gc');
+        ctx = canv.getContext('2d');
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canv.width, canv.height);
 
@@ -51,6 +53,8 @@ const Snake = () => {
             py = 0;
         }
 
+
+
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canv.width, canv.height);
 
@@ -65,6 +69,8 @@ const Snake = () => {
 
         ctx.fillStyle = 'red';
         ctx.fillRect(ax * gs, ay * gs, gs - 2, gs - 2);
+
+
 
         trail.push({ x: px, y: py });
         while (trail.length > tail) {
@@ -114,7 +120,7 @@ const Snake = () => {
                     setHasStarted(true)
                 }
             }}>start</div>
-            <br/>
+            <br />
             <h4>To play the Snake game click the start button and use the arrow keys to direct the snake.</h4>
         </div>
     );
