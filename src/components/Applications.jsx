@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Applications = () => {
 
   const [index, setIndex] = useState(0);
+  const [isCycle, setIsCycle] = useState(true);
+  const [time, setTime] = useState(0);
 
   const slides = [
     {
@@ -31,6 +33,20 @@ const Applications = () => {
     },
   ];
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setTime(time + 1);
+    }, 1000);
+    return () => clearTimeout(timeout);
+  });
+
+  useEffect(() => {
+    if (isCycle) {
+      time % 3 == 0 && setIndex(index < 3 ? index + 1 : 0)
+    };
+  }, [time]);
+
+
   return (
     <div className="w3-container w3-content w3-center w3-padding-64" id="apps">
       <h2 className="w3-wide">APPLICATIONS</h2>
@@ -39,31 +55,40 @@ const Applications = () => {
         <div className="slide-bottom-row w3-card-4">
           {slides.length > 0 && slides.map((obj, arrayIndex) => (
             <div key={obj.url} className="column">
-              <img className={index === arrayIndex ? "demo-active cursor" : "demo cursor"} src={obj.url} style={{ width: '100%' }} onClick={() => setIndex(arrayIndex)} alt={obj.caption} loading="lazy"></img>
+              <img className={index === arrayIndex ? "demo-active cursor" : "demo cursor"} src={obj.url} style={{ width: '100%' }} onClick={() => {
+                setIsCycle(false);
+                setIndex(arrayIndex);
+              }} alt={obj.caption} loading="lazy"></img>
             </div>
           ))}
         </div>
-        <br/>
+        <br />
         <a href={slides[index].link} target='_blank' rel="noopener noreferrer"> <h3>{slides[index].title}</h3></a>
-        <br/>
+        <br />
         {slides.length && slides.map((obj, arrayIndex) => index === arrayIndex ? (
           <a key={obj.url} href={obj.link} target='_blank' rel="noopener noreferrer">
-          <div  className="mySlide fade-in-image w3-card-4">
-            <div className="numbertext">{index + 1} / {slides.length}</div>
-            <img src={obj.url} alt={obj.caption} loading="lazy"/>
-          </div>
+            <div className="mySlide fade-in-image w3-card-4">
+              <div className="numbertext">{index + 1} / {slides.length}</div>
+              <img src={obj.url} alt={obj.caption} loading="lazy" />
+            </div>
           </a>
         ) : null)}
 
 
-        <div className="prev fade-in-image" onClick={() => setIndex(index === 0 ? (slides.length -1) : index - 1) }>&#10094;</div>
-        <div className="next fade-in-image" onClick={() => setIndex(index === (slides.length -1) ? 0 : index + 1)}>&#10095;</div>
+        <div className="prev fade-in-image" onClick={() => {
+          setIsCycle(false);
+          setIndex(index === 0 ? (slides.length - 1) : index - 1)
+        }}>&#10094;</div>
+        <div className="next fade-in-image" onClick={() => {
+          setIsCycle(false);
+          setIndex(index === (slides.length - 1) ? 0 : index + 1);
+        }}>&#10095;</div>
 
 
       </div>
-        <div className="caption-container fade-in-image">
-          <h4 id="caption" className='fade-in-image'>{slides[index].caption}</h4>
-        </div>
+      <div className="caption-container fade-in-image">
+        <h4 id="caption" className='fade-in-image'>{slides[index].caption}</h4>
+      </div>
     </div>
   );
 };

@@ -78,7 +78,6 @@ const Snake = () => {
         }
 
         if (ax === px && ay === py) {
-            console.log(score);
             setScore((tail - 5) + 1);
             tail++;
             ax = Math.floor(Math.random() * tc);
