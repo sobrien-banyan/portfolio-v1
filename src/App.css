@@ -35,7 +35,7 @@ a {
   top: 12px;
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 740px) {
   .nav-button {
     display: none;
   }
@@ -49,14 +49,18 @@ a {
   transition-duration: 1500ms;
 }
 .large-navbar {
-  left: 50%;
   z-index: 110 !important;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 740px) {
   .large-navbar {
     display: none;
   }
+}
+
+.top-large-nav-bar {
+  display: flex;
+  justify-content: space-around;
 }
 
 .gitHub-Contributions {

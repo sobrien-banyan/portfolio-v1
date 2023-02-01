@@ -5,7 +5,7 @@ const Form = () => {
     const store = useContext(MainContext);
     return (
         <div
-            id="Contact-form"
+            id="contact-form"
             style={store.themeBoolean ? store.darkTheme : store.lightTheme}
         >
             <div className="w3-container w3-content w3-padding-64">

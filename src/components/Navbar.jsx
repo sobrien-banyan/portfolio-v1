@@ -66,7 +66,15 @@ const Navbar = () => {
             onClick={() => navCloser()}
             className="w3-padding-large w3-button"
           >
-            SNAKE GAME
+            GAME
+          </button>
+        </a>
+        <a href="#contact-form">
+          <button
+            onClick={() => navCloser()}
+            className="w3-padding-large w3-button"
+          >
+            CONTACT
           </button>
         </a>
         <button
@@ -93,7 +101,7 @@ const Navbar = () => {
 
       <div className="w3-top large-navbar">
         <div
-          className="w3-bar w3-card"
+          className="w3-bar w3-card top-large-nav-bar"
           style={store.themeBoolean ? store.darkTheme : store.lightTheme}
         >
           <a href="#home">
@@ -112,7 +120,10 @@ const Navbar = () => {
             <button className="w3-padding-large w3-button">TOOLS</button>
           </a>
           <a href="#snake-game">
-            <button className="w3-padding-large w3-button">SNAKE GAME</button>
+            <button className="w3-padding-large w3-button">GAME</button>
+          </a>
+          <a href="#contact-form">
+            <button className="w3-padding-large w3-button">CONTACT</button>
           </a>
           <button
             onClick={() => store.setThemeBoolean(!store.themeBoolean)}
