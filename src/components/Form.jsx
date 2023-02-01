@@ -10,7 +10,7 @@ const Form = () => {
         >
             <div className="w3-container w3-content w3-padding-64">
                 <h2 className="w3-wide w3-center w3-margin-bottom">Contact</h2>
-                <form className="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+                <form className="w3-container w3-card-4 w3-padding-16 w3-white" name="contact" method="post">
                 <input type="hidden" name="form-name" value="contact" />.
                     <div className="w3-section">
                         <label>Name</label>
