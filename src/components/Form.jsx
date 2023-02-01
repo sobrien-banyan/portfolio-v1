@@ -14,15 +14,15 @@ const Form = () => {
                 <input type="hidden" name="form-name" value="contact" />.
                     <div className="w3-section">
                         <label>Name</label>
-                        <input className="w3-input" type="text" name="Name" required />
+                        <input className="w3-input" type="text" name="name" required />
                     </div>
                     <div className="w3-section">
                         <label>Email</label>
-                        <input className="w3-input" type="text" name="Email" required />
+                        <input className="w3-input" type="email" name="email" required />
                     </div>
                     <div className="w3-section">
                         <label>Message</label>
-                        <input className="w3-input" type="text" name="Message" required />
+                        <input className="w3-input" type="text" name="message" required />
                     </div>
                     <button type="submit" className="w3-button w3-right w3-theme">Send</button>
                 </form>
