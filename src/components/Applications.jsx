@@ -36,7 +36,7 @@ const Applications = () => {
       <h2 className="w3-wide">APPLICATIONS</h2>
 
       <div className="container">
-        <div className="slide-bottom-row">
+        <div className="slide-bottom-row w3-card-4">
           {slides.length > 0 && slides.map((obj, arrayIndex) => (
             <div key={obj.url} className="column">
               <img className={index === arrayIndex ? "demo-active cursor" : "demo cursor"} src={obj.url} style={{ width: '100%' }} onClick={() => setIndex(arrayIndex)} alt={obj.caption} loading="lazy"></img>
@@ -48,7 +48,7 @@ const Applications = () => {
         <br/>
         {slides.length && slides.map((obj, arrayIndex) => index === arrayIndex ? (
           <a key={obj.url} href={obj.link} target='_blank' rel="noopener noreferrer">
-          <div  className="mySlide fade-in-image">
+          <div  className="mySlide fade-in-image w3-card-4">
             <div className="numbertext">{index + 1} / {slides.length}</div>
             <img src={obj.url} alt={obj.caption} loading="lazy"/>
           </div>

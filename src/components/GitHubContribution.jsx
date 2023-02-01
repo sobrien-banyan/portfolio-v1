@@ -13,7 +13,7 @@ const GitHubContribution = () => {
       >
         <img
           src="assets/img/github-contributions.png"
-          className="w3-round w3-margin-bottom"
+          className="w3-round w3-margin-bottom w3-card-4"
           alt="GitHub Contirbution"
           style={{ width: 100 + "%" }}
           loading="lazy"

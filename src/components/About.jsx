@@ -28,7 +28,7 @@ const About = () => {
           <div className="w3-third" style={{ filter: `hue-rotate(${store.hueRotate}deg)` }}>
             <img
               src="https://github-readme-stats.vercel.app/api?username=sobrien-banyan&count_private=true&show_icons=true&hide=prs&theme=radical"
-              className="w3-round w3-margin-bottom codeImage"
+              className="w3-round w3-margin-bottom codeImage w3-card-4"
               alt="github stats"
               loading="lazy"
             ></img>
@@ -36,7 +36,7 @@ const About = () => {
           <div className="w3-third" style={{ filter: `hue-rotate(${store.hueRotate}deg)` }}>
             <img
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=sobrien-banyan&theme=dark&langs_count=10&layout=compact"
-              className="w3-round codeImage"
+              className="w3-round codeImage w3-card-4"
               alt="top languages"
               loading="lazy"
             ></img>
@@ -47,7 +47,7 @@ const About = () => {
           <div className="w3-third" style={{ filter: `hue-rotate(${store.hueRotate}deg)` }}>
             <img
               src="assets/img/code-2.jpg"
-              className="w3-round w3-margin-bottom codeImage"
+              className="w3-round w3-margin-bottom codeImage w3-card-4"
               alt="code"
               loading="lazy"
             ></img>
@@ -55,7 +55,7 @@ const About = () => {
           <div className="w3-third" style={{ filter: `hue-rotate(${store.hueRotate}deg)` }}>
             <img
               src="assets/img/code-1.jpg"
-              className="w3-round codeImage"
+              className="w3-round codeImage w3-card-4"
               alt="code"
               loading="lazy"
             ></img>

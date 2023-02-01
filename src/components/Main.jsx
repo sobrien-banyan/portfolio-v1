@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import Tools from "./Tools";
 import Applications from "./Applications";
 import Snake from "./snake/Snake";
+import Form from "./Form";
 import Footer from "./Footer";
 
 const Main = (props) => {
@@ -30,6 +31,7 @@ const Main = (props) => {
       <Applications />
       <Tools />
       <Snake />
+      <Form />
       <Footer />
     </main>
   );

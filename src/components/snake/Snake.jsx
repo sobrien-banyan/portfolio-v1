@@ -113,8 +113,8 @@ const Snake = () => {
         <div className="w3-container w3-content w3-center w3-padding-64 w3-hide-small" id="snake-game">
             <h2 className="w3-wide">Snake Game</h2>
             <h3 className="w3-wide">Score: {score}</h3>
-            <canvas id='gc' width='400' height='400'></canvas>
-            <div className='w3-button w3-padding-large w3-large w3-margin-top snake-start-btn w3-green w3-hover-light-green' onClick={() => {
+            <canvas className="w3-card-4" id='gc' width='400' height='400'></canvas>
+            <div className='w3-button w3-padding-large w3-large w3-margin-top snake-start-btn w3-green w3-hover-light-green w3-card-4' onClick={() => {
                 if (!hasStarted) {
                     start()
                     setHasStarted(true)
