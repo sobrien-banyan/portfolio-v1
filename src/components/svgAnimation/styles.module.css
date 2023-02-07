@@ -16,14 +16,14 @@
 
   .svgcontainer {
     width: 100%;
-    padding-left: 8%;
+    padding: 0 3%;
   }
   
   @media (max-width: 650px){
 .svgwrapper {
   bottom: 23vh
 }
-.svgcontainer {
+/* .svgcontainer {
     padding-left: 10%;
-}
+} */
   }
