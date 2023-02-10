@@ -14,11 +14,9 @@ const ObjectId = require("mongodb").ObjectId;
  
 // This section will help you get a list of all the records.
 recordRoutes.route("/record").get(function (req, res) {
-  // console.log('kkkkkkk')
+
  let data = [];
  let db_connect = dbo.getDb("snake_game");
- console.log(db_connect);
-//  console.log(dbo.connectToServer);
  db_connect
    .collection("name_score")
    .find()
@@ -28,13 +26,17 @@ recordRoutes.route("/record").get(function (req, res) {
       name: element.name,
       score: element.score,
     });
-   }).then(() => res.json(data));
-  //  res.json(data);
-  //  .toArray(function (err, result) {
-  //    if (err) throw err;
-  //    console.log(JSON.stringify(result))
-  //    res.json(result);
-  //  });
+   }).then(() => {
+    const sortedList = data.sort((a,b) => {
+      if (a.score > b.score) {
+        return -1;
+      }
+      if (a.score < b.score) {
+        return 1;
+      }
+      return 0;
+    })
+    res.json(sortedList.slice(0, 20))});
 });
  
 // This section will help you get a single record by id
@@ -52,12 +54,7 @@ recordRoutes.route("/record/:id").get(function (req, res) {
 // This section will help you create a new record.
 recordRoutes.route("/record/add").post(function (req, response) {
  let db_connect = dbo.getDb();
- let myobj = {
-   name: req.body.name,
-   position: req.body.position,
-   level: req.body.level,
- };
- db_connect.collection("records").insertOne(myobj, function (err, res) {
+ db_connect.collection("name_score").insertOne(req.body, function (err, res) {
    if (err) throw err;
    response.json(res);
  });

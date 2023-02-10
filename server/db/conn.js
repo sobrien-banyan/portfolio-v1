@@ -21,8 +21,8 @@ async function run() {
     //   console.log(ratings.find());
       _db = database;
     //   await cursor.forEach(doc => console.dir(doc));
-    } finally {
-    //   await client.close();
+    } catch (err) {
+        console.error(error.message);
     ''
     }
   }
@@ -30,22 +30,6 @@ async function run() {
 module.exports = {
     connectToServer: function (callback) {
         run();
-        // mongoose.connect(Db, {
-        //     useNewUrlParser: true,
-        //     useUnifiedTopology: true,
-        //     serverApi: ServerApiVersion.v1,
-        //   }).then((evt) => console.log(evt))
-        // console.log(client)
-        // console.log(client)
-      client.connect(Db, function (err, db) {
-        // Verify we got a good "db" object
-        if (db)
-            {
-            _db = db.db("snake_game");
-             console.log("Successfully connected to MongoDB."); 
-            }
-            return callback(err);
-           });
     },
    
     getDb: function () {
