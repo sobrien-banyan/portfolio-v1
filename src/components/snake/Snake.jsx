@@ -1,25 +1,12 @@
 import React, { useState } from "react";
-import axios from 'axios';
-import RecordList from "./Records";
 
 const Snake = () => {
 
     const [score, setScore] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
-    const [name, setName] = useState('');
 
     let ctx;
     let canv;
-    let px = 10;
-    let py = 10;
-    let yv = 0;
-    let xv = 0;
-    let gs = 20;
-    let tc = 20;
-    let ay = 15;
-    let ax = 15;
-    let trail = [];
-    let tail = 5;
 
     window.onload = function () {
         canv = document.getElementById('gc');
@@ -37,31 +24,16 @@ const Snake = () => {
         ctx.fillRect(0, 0, canv.width, canv.height);
 
     };
-
-    const scoreHandler =(currentScore) => {
-        let body = {
-            name: name ? name : 'ACE',
-            score: currentScore,
-        };
-        axios.post(`http://localhost:5050/record/add`, body);
-    };
-
-    const gameOver = (currentScore) => {
-        scoreHandler(currentScore)
-        setScore(0);
-        px = 10;
-        py = 10;
-        yv = 0;
-        xv = 0;
-        gs = 20;
-        tc = 20;
-        ay = 15;
-        ax = 15;
-        trail = [];
-        tail = 5;
-    };
-
-    
+    let px = 10;
+    let py = 10;
+    let yv = 0;
+    let xv = 0;
+    let gs = 20;
+    let tc = 20;
+    let ay = 15;
+    let ax = 15;
+    let trail = [];
+    let tail = 5;
     function game() {
         px += xv;
         py += yv;
@@ -87,16 +59,18 @@ const Snake = () => {
         ctx.fillRect(0, 0, canv.width, canv.height);
 
         ctx.fillStyle = 'lime';
-
         for (var i = 0; i < trail.length; i++) {
             ctx.fillRect(trail[i].x * gs, trail[i].y * gs, gs - 2, gs - 2);
-            if (tail > 5 && trail[i].x === px && trail[i].y === py) {
-                gameOver(tail - 5);
+            if (trail[i].x === px && trail[i].y === py) {
+                tail = 5;
+                setScore(0)
             }
         }
 
         ctx.fillStyle = 'red';
         ctx.fillRect(ax * gs, ay * gs, gs - 2, gs - 2);
+
+
 
         trail.push({ x: px, y: py });
         while (trail.length > tail) {
@@ -139,11 +113,6 @@ const Snake = () => {
             <h2 className="w3-wide">Snake Game</h2>
             <h3 className="w3-wide">Score: {score}</h3>
             <canvas className="w3-card-4" id='gc' width='400' height='400'></canvas>
-            
-                <div className="w3-section snake-start-btn">
-                    <label className="w3-left">Name</label>
-                    <input className='w3-input w3-border w3-hover-border-black  w3-card-4' placeholder="Enter name and press start" name='user-name' value={name} onChange={(evt) => setName(evt.target.value)} />
-                </div>
             <div className='w3-button w3-padding-large w3-large w3-margin-top snake-start-btn w3-green w3-hover-light-green w3-card-4' onClick={() => {
                 if (!hasStarted) {
                     start()
@@ -152,7 +121,6 @@ const Snake = () => {
             }}>start</div>
             <br />
             <h4>To play the Snake game click the start button and use the arrow keys to direct the snake.</h4>
-            <RecordList />
         </div>
     );
 }
