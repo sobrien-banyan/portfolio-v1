@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { MainContext } from "../Context";
 import axios from 'axios';
 
 export default function RecordList() {
+  const store = useContext(MainContext);
   const [list1, setList1] = useState([]);
   const [list2, setList2] = useState([]);
 
-
+  console.log(store.apiToggle)
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
@@ -25,7 +27,7 @@ export default function RecordList() {
 
     getRecords();
 
-  }, [list1.length]);
+  }, [list1.length, store.apiToggle]);
 
   // This method will map out the records on the table
   function recordList(list) {

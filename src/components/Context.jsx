@@ -21,6 +21,7 @@ export const MainContextProvider = (props) => {
   const [themeBoolean, setThemeBoolean] = useState(false);
   const [hueRotate, setHueRotate] = useState("");
   const [randomNumber0or1] = useState(useMemo(() => Math.floor(Math.random() * 2), []));
+  const [apiToggle, setApiToggle] = useState(true)
 
   return (
     <MainContext.Provider
@@ -37,7 +38,9 @@ export const MainContextProvider = (props) => {
         setThemeBoolean,
         hueRotate,
         setHueRotate,
-        randomNumber0or1
+        randomNumber0or1,
+        apiToggle,
+        setApiToggle
       }}
     >
       {props.children}

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { MainContext } from "../Context";
 import axios from 'axios';
 import RecordList from "./Records";
 
 const Snake = () => {
-
+    const store = useContext(MainContext);
     const [score, setScore] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
     const [name, setName] = useState('');
@@ -38,17 +39,18 @@ const Snake = () => {
 
     };
 
-    const scoreHandler =(currentScore) => {
+    const scoreHandler = async (currentScore) => {
         let body = {
             name: name ? name : `ACE-${currentScore}`,
             score: currentScore,
         };
-        axios.post(`http://localhost:5050/record/add`, body);
+        await axios.post(`http://localhost:5050/record/add`, body);
     };
 
     const gameOver = (currentScore) => {
         scoreHandler(currentScore)
         setScore(0);
+        store.setApiToggle(!store.apiToggle);
         px = 10;
         py = 10;
         yv = 0;
