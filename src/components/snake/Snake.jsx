@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import RecordList from "./Records";
 
 const Snake = () => {
 
@@ -121,6 +122,7 @@ const Snake = () => {
             }}>start</div>
             <br />
             <h4>To play the Snake game click the start button and use the arrow keys to direct the snake.</h4>
+            <RecordList/>
         </div>
     );
 }
