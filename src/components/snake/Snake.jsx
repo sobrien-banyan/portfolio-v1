@@ -40,7 +40,7 @@ const Snake = () => {
 
     const scoreHandler =(currentScore) => {
         let body = {
-            name: name ? name : 'ACE',
+            name: name ? name : `ACE-${currentScore}`,
             score: currentScore,
         };
         axios.post(`http://localhost:5050/record/add`, body);

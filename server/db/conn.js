@@ -6,7 +6,6 @@ const client = new MongoClient(Db, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
-// const client = new MongoClient('mongodb+srv://sean-admin:lFwHEyClyxctWJqo@cluster0.v6q3wky.mongodb.net/snake_game?retryWrites=true&w=majority');
  
 var _db;
 
@@ -15,15 +14,9 @@ async function run() {
       await client.connect()
       .then(() =>  console.log("Successfully connected to MongoDB."));
       const database = client.db("snake_game");
-    //   const ratings = database.collection("name_score");
-    //   const cursor = ratings.find();
-    //   console.log(cursor)
-    //   console.log(ratings.find());
       _db = database;
-    //   await cursor.forEach(doc => console.dir(doc));
     } catch (err) {
-        console.error(error.message);
-    ''
+        console.error(err.message);
     }
   }
  
