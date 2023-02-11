@@ -7,7 +7,6 @@ export default function RecordList() {
   const [list1, setList1] = useState([]);
   const [list2, setList2] = useState([]);
 
-  console.log(store.apiToggle)
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
