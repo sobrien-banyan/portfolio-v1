@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:server": "forever start --minUptime 1000 --spinSleepTime 1000 server.js",
-    "build": "npm install"
+    "build": "npm install",
+    "start:server": "forever start --minUptime 1000 --spinSleepTime 1000 ./server.js"
   },
   "keywords": [],
   "author": "",
