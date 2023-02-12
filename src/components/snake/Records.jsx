@@ -46,7 +46,7 @@ export default function RecordList() {
   return (
     <div className="score-row">
       <div>
-        <h3>High Scores</h3>
+        <h3>High Scores.</h3>
         <table className="w3-table w3-striped w3-bordered" style={{ marginTop: 20 }}>
           <thead>
             <tr>
