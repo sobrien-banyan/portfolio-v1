@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:server": "nodemon server.js",
-    "build": "npm install"
+    "start:server": "forever start -c \"nodemon --exitcrash\" server.js",
+    "build": "npm install && npm install -g forever && npm install -g nodemon"
   },
   "keywords": [],
   "author": "",
