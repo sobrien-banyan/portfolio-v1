@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:server": "node server.js",
-    "build": "npm install && npm install -g forever && npm install -g nodemon"
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",
