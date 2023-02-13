@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && node server.js",
-    "start:server": "node server.js"
+    "start:server": "node server.js",
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",
