@@ -16,7 +16,7 @@ const About = () => {
         <h2 className="w3-wide w3-center w3-margin-bottom">ABOUT</h2>
         <br />
         <p className="w3-justify">
-        Software Engineer focused on implementing excellent coding practices, adding value to projects, and learning the newest technologies. Proficient in React, Redux, Typescript, and Java along with other coding languages and libraries. Currently attending Columbia University learning Python and Django. Consistently writing clean code. Works alongside other developers on various projects. Creating and maintaining large code bases. This site was built using the MERN (Mongo, Express, React and Node.js) stack. A context provider to pass the state around. Have fun by dragging the profile picture around or clicking on the name in the header. May you enjoy this site.
+        Software Engineer focused on implementing excellent coding practices, adding value to projects, and learning the newest technologies. Proficient in React, Redux, Typescript, and Java along with other coding languages and libraries. Currently attending Columbia University learning Python and Django. Consistently writing clean code. Works alongside other developers on various projects. Creating and maintaining large code bases. This site was built with React. A context provider to pass the state around. Have fun by dragging the profile picture around or clicking on the name in the header. May you enjoy this site.
         </p>
         
         <GitHubContribution />
