@@ -1,13 +1,13 @@
 import React, { useState, useContext } from "react";
 import { MainContext } from "../Context";
-// import axios from 'axios';
-// import RecordList from "./Records";
+import axios from 'axios';
+import RecordList from "./Records";
 
 const Snake = () => {
     const store = useContext(MainContext);
     const [score, setScore] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
-    // const [name, setName] = useState('');
+    const [name, setName] = useState('');
 
     let ctx;
     let canv;
@@ -39,16 +39,16 @@ const Snake = () => {
 
     };
 
-    // const scoreHandler = async (currentScore) => {
-    //     let body = {
-    //         name: name ? name : `ACE-${currentScore}`,
-    //         score: currentScore,
-    //     };
-    //     await axios.post(`http://localhost:5050/record/add`, body);
-    // };
+    const scoreHandler = async (currentScore) => {
+        let body = {
+            name: name ? name : `ACE-${currentScore}`,
+            score: currentScore,
+        };
+        await axios.post(`http://3.83.25.6/record/add`, body);
+    };
 
     const gameOver = (currentScore) => {
-        // scoreHandler(currentScore);
+        scoreHandler(currentScore);
         setScore(0);
         store.setApiToggle(!store.apiToggle);
         px = 10;
@@ -142,10 +142,10 @@ const Snake = () => {
             <h3 className="w3-wide">Score: {score}</h3>
             <canvas className="w3-card-4" id='gc' width='400' height='400'></canvas>
             
-                {/* <div className="w3-section snake-start-btn">
+                <div className="w3-section snake-start-btn">
                     <label className="w3-left">Name</label>
                     <input className='w3-input w3-border w3-hover-border-black  w3-card-4' placeholder="Enter name and press start" name='user-name' value={name} onChange={(evt) => setName(evt.target.value)} />
-                </div> */}
+                </div>
             <div className='w3-button w3-padding-large w3-large w3-margin-top snake-start-btn w3-green w3-hover-light-green w3-card-4' onClick={() => {
                 if (!hasStarted) {
                     start()
@@ -154,7 +154,7 @@ const Snake = () => {
             }}>start</div>
             <br />
             <h4>To play the Snake game click the start button and use the arrow keys to direct the snake.</h4>
-            {/* <RecordList /> */}
+            <RecordList />
         </div>
     );
 }

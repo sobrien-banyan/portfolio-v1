@@ -11,7 +11,7 @@ export default function RecordList() {
   useEffect(() => {
     async function getRecords() {
       try {
-        const response = await axios.get(`http://localhost:5050/record/`);
+        const response = await axios.get(`http://3.83.25.6/record`);
         const data = response.data;
         if (data.length <= 10) {
           setList1(data);
