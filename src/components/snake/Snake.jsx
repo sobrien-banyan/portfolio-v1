@@ -44,7 +44,7 @@ const Snake = () => {
             name: name ? name : `ACE-${currentScore}`,
             score: currentScore,
         };
-        await axios.post(`http://3.83.25.6/record/add`, body);
+        await axios.post(`https://thisistheserverformywebsite.online/add`, body);
     };
 
     const gameOver = (currentScore) => {
