@@ -153,7 +153,7 @@ const Snake = () => {
                 }
             }}>start</div>
             <br />
-            <h4>To play the Snake game click the start button and use the arrow keys to direct the snake.</h4>
+            <h4>To play the Snake game enter your name and click the start button. Use the arrow keys to direct the snake.</h4>
             <RecordList />
         </div>
     );
