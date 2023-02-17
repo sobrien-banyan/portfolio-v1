@@ -45,12 +45,12 @@ const Snake = () => {
             score: currentScore,
         };
         await axios.post(`https://thisistheserverformywebsite.online/record/add`, body);
+       
     };
 
     const gameOver = (currentScore) => {
         scoreHandler(currentScore);
         setScore(0);
-        store.setApiToggle(!store.apiToggle);
         px = 10;
         py = 10;
         yv = 0;

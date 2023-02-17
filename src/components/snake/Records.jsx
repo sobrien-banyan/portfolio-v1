@@ -1,9 +1,7 @@
-import React, { useEffect, useState, useContext } from "react";
-import { MainContext } from "../Context";
+import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
 export default function RecordList() {
-  const store = useContext(MainContext);
   const [list1, setList1] = useState([]);
   const [list2, setList2] = useState([]);
 
@@ -26,7 +24,7 @@ export default function RecordList() {
 
     getRecords();
 
-  }, [list1.length, store.apiToggle]);
+  }, [list1.length]);
 
   // This method will map out the records on the table
   function recordList(list) {
