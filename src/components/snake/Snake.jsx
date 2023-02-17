@@ -1,10 +1,8 @@
-import React, { useState, useContext } from "react";
-import { MainContext } from "../Context";
+import React, { useState } from "react";
 import axios from 'axios';
 import RecordList from "./Records";
 
 const Snake = () => {
-    const store = useContext(MainContext);
     const [score, setScore] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
     const [name, setName] = useState('');
