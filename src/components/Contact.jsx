@@ -78,7 +78,7 @@ const Contact = () => {
             className="w3-input w3-border w3-hover-border-black"
             onChange={(e) => onChange(e)}
             style={{ width: 100 + "%" }}
-            value={formData.Suject}
+            value={formData.Subject}
             name="Subject"
             placeholder="Please Enter Your Subject"
             required
