@@ -42,7 +42,7 @@ const Snake = () => {
             name: name ? name : `ACE-${currentScore}`,
             score: currentScore,
         };
-        await axios.post(`https://thisistheserverformywebsite.online/record/add`, body);
+        await axios.post(`https://${process.env.REACT_APP_SERVER_DOMAIN}/record/add`, body);
        
     };
 

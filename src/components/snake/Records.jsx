@@ -9,7 +9,7 @@ export default function RecordList() {
   useEffect(() => {
     async function getRecords() {
       try {
-        const response = await axios.get(`https://thisistheserverformywebsite.online/record`);
+        const response = await axios.get(`https://${process.env.REACT_APP_SERVER_DOMAIN}/record`);
         const data = response.data;
         if (data.length <= 10) {
           setList1(data);
