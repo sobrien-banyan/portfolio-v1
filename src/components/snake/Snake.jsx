@@ -176,12 +176,12 @@ const Snake = () => {
             <h3 className="w3-wide">Score: {score}</h3>
             <canvas className="w3-card-4" id='gc' width='400' height='400'></canvas>
             <div className="w3-hide-large w3-hide-medium">
-            <input className='w3-button w3-padding-large w3-large w3-margin-top w3-green w3-hover-light-green w3-card-4 snake-start-btn' value='Up' />
+            <input onClick={(evt) => evt.preventDefault()} className='w3-button w3-padding-large w3-large w3-margin-top w3-green w3-hover-light-green w3-card-4 snake-start-btn' value='Up' />
             <div className=" w3-card-4 w3-margin-top snake-button-wrapper" >
-            <input className='w3-button w3-padding-large w3-large  w3-green w3-hover-light-green w3-half' value='Left' />
-            <input className='w3-button w3-padding-large w3-large  w3-green w3-hover-light-green w3-half' value='Right' />
+            <input onClick={(evt) => evt.preventDefault()} className='w3-button w3-padding-large w3-large  w3-green w3-hover-light-green w3-half' value='Left' />
+            <input onClick={(evt) => evt.preventDefault()} className='w3-button w3-padding-large w3-large  w3-green w3-hover-light-green w3-half' value='Right' />
             </div>
-            <input className='w3-button w3-padding-large w3-large w3-margin-top w3-green w3-hover-light-green w3-card-4 snake-start-btn' value='Down' />
+            <input onClick={(evt) => evt.preventDefault()} className='w3-button w3-padding-large w3-large w3-margin-top w3-green w3-hover-light-green w3-card-4 snake-start-btn' value='Down' />
             </div>
             <br />
           

@@ -34,6 +34,12 @@ const Applications = () => {
   ];
 
   useEffect(() => {
+    if (window.innerWidth < 600) {
+      setIsCycle(false);
+    }
+  },[window.innerWidth]);
+
+  useEffect(() => {
     const timeout = setTimeout(() => {
       setTime(time + 1);
     }, 1000);
@@ -86,7 +92,7 @@ const Applications = () => {
 
 
       </div>
-      <div className="caption-container fade-in-image w3-hide-small">
+      <div className="caption-container fade-in-image">
         <h4 id="caption" className='fade-in-image'>{slides[index].caption}</h4>
       </div>
     </div>
