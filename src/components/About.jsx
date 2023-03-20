@@ -13,9 +13,9 @@ const About = () => {
     <div className='about-section'>
       <Links />
       <div className="w3-container w3-content w3-center w3-padding-64">
-        <h2 className="w3-wide w3-center w3-margin-bottom">ABOUT</h2>
+        <h2 className="w3-wide w3-center w3-margin-bottom z-index-10">ABOUT</h2>
         <br />
-        <p className="w3-justify">
+        <p className="w3-justify z-index-10">
         Software Engineer focused on implementing excellent coding practices, adding value to projects, and learning the newest technologies. Proficient in React, Redux, Typescript, and Java along with other coding languages and libraries. Currently attending Columbia University learning Python and Django. Consistently writing clean code. Works alongside other developers on various projects. Creating and maintaining large code bases. This site is built using the MERN (Mongo, Express, React, Node.js) stack. The front-end is hosted on Netlify. The back-end is running using Ubantu on an AWS EC2 instance. A context provider is used to pass the state around. Have fun by dragging the profile picture around, clicking on the name in the header or switching from light to dark theme. May you enjoy this site.
         </p>
         <p className="w3-left-align z-index-10"><a href="https://github.com/sobrien-banyan/Deploy-MERN-stack-tutorial"
