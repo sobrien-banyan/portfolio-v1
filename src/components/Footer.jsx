@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { MainContext } from "./Context";
 
 const Footer = () => {
@@ -22,7 +22,11 @@ const Footer = () => {
         >
           w3Schools
         </a>{" "}
-        and <a href="https://codesandbox.io/">codesandbox.io</a>{" "}
+        and <a 
+          href="https://codesandbox.io/"
+          target='_blank'
+          rel="noopener noreferrer"
+        >codesandbox.io</a>{" "}
       </p>
     </footer>
   );
