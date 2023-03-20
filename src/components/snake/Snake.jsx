@@ -29,6 +29,10 @@ const Snake = () => {
 
     const start = () => {
         document.addEventListener('keydown', keyPush);
+        document.addEventListener('mousedown', (evt) => {
+            console.log(evt.target.value);
+            arrowButtons(evt.target.value);
+        });
         setInterval(game, 1000 / 15);
         canv = document.getElementById('gc');
         ctx = canv.getContext('2d');
@@ -134,13 +138,31 @@ const Snake = () => {
         }
     };
 
+    const arrowButtons = (direction) => {
+        switch (direction) {
+            case 'Left':
+                xv = -1; yv = 0;
+                break;
+            case 'Up':
+                xv = 0; yv = -1;
+                break;
+            case 'Right':
+                xv = 1; yv = 0;
+                break;
+            case 'Down':
+                xv = 0; yv = 1;
+                break;
+            default:
+                break;
+        }
+    };
+
     return (
-        <div className="w3-container w3-content w3-center w3-padding-64 w3-hide-small" id="snake-game">
+        <div className="w3-container w3-content w3-center w3-padding-64 " id="snake-game">
             <h2 className="w3-wide">Snake Game</h2>
-            <h3 className="w3-wide">Score: {score}</h3>
-            <canvas className="w3-card-4" id='gc' width='400' height='400'></canvas>
-            
-                <div className="w3-section snake-start-btn">
+            <h4 className="w3-hide-small">To play enter name and click the start button. Use the arrow keys to direct the snake.</h4>
+            <h4 className="w3-hide-medium w3-hide-large">To play enter name and click the start button. Use the direction buttons to direct the snake.</h4>
+            <div className="w3-section snake-start-btn">
                     <label className="w3-left">Name</label>
                     <input className='w3-input w3-border w3-hover-border-black  w3-card-4' placeholder="Enter name and press start" name='user-name' value={name} onChange={(evt) => setName(evt.target.value)} />
                 </div>
@@ -151,7 +173,18 @@ const Snake = () => {
                 }
             }}>start</div>
             <br />
-            <h4>To play enter name and click the start button. Use the arrow keys to direct the snake.</h4>
+            <h3 className="w3-wide">Score: {score}</h3>
+            <canvas className="w3-card-4" id='gc' width='400' height='400'></canvas>
+            <div className="w3-hide-large w3-hide-medium">
+            <input className='w3-button w3-padding-large w3-large w3-margin-top w3-green w3-hover-light-green w3-card-4 snake-start-btn' value='Up' />
+            <div className=" w3-card-4 w3-margin-top snake-button-wrapper" >
+            <input className='w3-button w3-padding-large w3-large  w3-green w3-hover-light-green w3-half' value='Left' />
+            <input className='w3-button w3-padding-large w3-large  w3-green w3-hover-light-green w3-half' value='Right' />
+            </div>
+            <input className='w3-button w3-padding-large w3-large w3-margin-top w3-green w3-hover-light-green w3-card-4 snake-start-btn' value='Down' />
+            </div>
+            <br />
+          
             <RecordList />
         </div>
     );

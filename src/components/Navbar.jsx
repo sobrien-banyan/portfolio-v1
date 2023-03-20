@@ -61,7 +61,7 @@ const Navbar = () => {
             TOOLS
           </button>
         </a>
-        <a href="#snake-game" className="w3-hide-small">
+        <a href="#snake-game">
           <button
             onClick={() => navCloser()}
             className="w3-padding-large w3-button"

@@ -329,6 +329,11 @@ svg {
 .snake-start-btn {
   width: 400px;
 }
+.snake-button-wrapper {
+  width: 400px;
+  display: flex;
+  
+}
 
 .score-row {
   width: 100%;
