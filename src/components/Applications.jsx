@@ -86,7 +86,7 @@ const Applications = () => {
 
 
       </div>
-      <div className="caption-container fade-in-image">
+      <div className="caption-container fade-in-image w3-hide-small">
         <h4 id="caption" className='fade-in-image'>{slides[index].caption}</h4>
       </div>
     </div>
