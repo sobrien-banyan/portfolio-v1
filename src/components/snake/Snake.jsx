@@ -30,7 +30,7 @@ const Snake = () => {
     const start = () => {
         document.addEventListener('keydown', keyPush);
         document.addEventListener('mousedown', (evt) => {
-            console.log(evt.target.value);
+            evt.preventDefault();
             arrowButtons(evt.target.value);
         });
         setInterval(game, 1000 / 15);
@@ -119,7 +119,7 @@ const Snake = () => {
     }
 
     function keyPush(evt) {
-        evt.preventDefault()
+        evt.preventDefault();
         switch (evt.keyCode) {
             case 37:
                 xv = -1; yv = 0;
