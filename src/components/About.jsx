@@ -18,7 +18,7 @@ const About = () => {
         <p className="w3-justify">
         Software Engineer focused on implementing excellent coding practices, adding value to projects, and learning the newest technologies. Proficient in React, Redux, Typescript, and Java along with other coding languages and libraries. Currently attending Columbia University learning Python and Django. Consistently writing clean code. Works alongside other developers on various projects. Creating and maintaining large code bases. This site is built using the MERN (Mongo, Express, React, Node.js) stack. The front-end is hosted on Netlify. The back-end is running using Ubantu on an AWS EC2 instance. A context provider is used to pass the state around. Have fun by dragging the profile picture around, clicking on the name in the header or switching from light to dark theme. May you enjoy this site.
         </p>
-        <p><a href="https://github.com/sobrien-banyan/Deploy-MERN-stack-tutorial"
+        <p className="w3-left-align z-index-10"><a href="https://github.com/sobrien-banyan/Deploy-MERN-stack-tutorial"
         title="Deploy MERN stack tutorial"
         target="_blank"
         className="w3-hover-text-green"
