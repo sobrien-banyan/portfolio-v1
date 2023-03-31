@@ -18,6 +18,11 @@
     width: 100%;
     padding: 0 3%;
   }
+
+  .svgsmallnamecontainer {
+    width: 100px;
+    margin: 10px 0 0 20px;
+  }
   
   @media (max-width: 650px){
 .svgwrapper {

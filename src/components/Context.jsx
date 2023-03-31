@@ -18,10 +18,12 @@ export const MainContextProvider = (props) => {
     background: "#1e1e20",
     color: "#dcdcdc",
   });
+ 
   const [themeBoolean, setThemeBoolean] = useState(true);
   const [hueRotate, setHueRotate] = useState("");
   const [randomNumber0or1] = useState(useMemo(() => Math.floor(Math.random() * 2), []));
   const [snakeScores, setSnakeScores] = useState([]);
+  const [scrollFromTop, setScrollFromTop] = useState(0);
 
   return (
     <MainContext.Provider
@@ -40,7 +42,9 @@ export const MainContextProvider = (props) => {
         setHueRotate,
         randomNumber0or1,
         snakeScores,
-        setSnakeScores
+        setSnakeScores,
+        scrollFromTop,
+        setScrollFromTop
       }}
     >
       {props.children}

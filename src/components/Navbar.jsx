@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { MainContext } from "./Context";
+import SvgAnimation from "./svgAnimation/SvgAnimationSmallName";
 
 const Navbar = () => {
   const store = useContext(MainContext);
@@ -101,12 +102,14 @@ const Navbar = () => {
 
       <div className="w3-top large-navbar">
         <div
-          className="w3-bar w3-card top-large-nav-bar"
+          className="w3-card top-large-nav-bar"
           style={store.themeBoolean ? store.darkTheme : store.lightTheme}
         >
-          <a href="#home">
-            <button className="w3-padding-large w3-button">HOME</button>
+           <a href="#home">
+           <SvgAnimation/>
           </a>
+          <div>
+         
           <a href="#about">
             <button className="w3-padding-large w3-button">ABOUT</button>
           </a>
@@ -132,6 +135,7 @@ const Navbar = () => {
             <i className="fas fa-adjust"></i>
           </button>
           {/* <a href='#contact'><button className="w3-padding-large w3-button">CONTACT</button></a> */}
+          </div>
         </div>
       </div>
     </div>

@@ -16,3 +16,6 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 On netlify add the .env variable
+
+svg resource https://danmarshall.github.io/google-font-to-svg-path/
+font: oxygen 

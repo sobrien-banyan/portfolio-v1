@@ -18,7 +18,7 @@ export default function RecordList() {
           setList2(data.slice(10));
         }
       } catch (err) {
-        console.log(err);
+        console.log(err.message);
       }
     }
 
