@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ApplicationCarroussel from "./application-carroussel";
 
 const Applications = () => {
 
@@ -70,7 +71,7 @@ const Applications = () => {
         </div>
         <br />
         <a href={slides[index].link} target='_blank' rel="noopener noreferrer"> <h3>{slides[index].title}</h3></a>
-        <br />
+        {/* <br />
         {slides.length && slides.map((obj, arrayIndex) => index === arrayIndex ? (
           <a key={obj.url} href={obj.link} target='_blank' rel="noopener noreferrer">
             <div className="mySlide fade-in-image w3-card-4">
@@ -78,23 +79,25 @@ const Applications = () => {
               <img src={obj.url} alt={obj.caption} loading="lazy" />
             </div>
           </a>
-        ) : null)}
+        ) : null)} */}
 
 
-        <div className="prev fade-in-image" onClick={() => {
+        {/* <div className="prev fade-in-image" onClick={() => {
           setIsCycle(false);
           setIndex(index === 0 ? (slides.length - 1) : index - 1)
         }}>&#10094;</div>
         <div className="next fade-in-image" onClick={() => {
           setIsCycle(false);
           setIndex(index === (slides.length - 1) ? 0 : index + 1);
-        }}>&#10095;</div>
+        }}>&#10095;</div> */}
+
+        <ApplicationCarroussel />
 
 
       </div>
-      <div className="caption-container fade-in-image">
+      {/* <div className="caption-container fade-in-image">
         <h4 id="caption" className='fade-in-image'>{slides[index].caption}</h4>
-      </div>
+      </div> */}
     </div>
   );
 };
