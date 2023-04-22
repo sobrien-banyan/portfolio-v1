@@ -21,7 +21,7 @@ export default function ApplicationCarroussel() {
     },
     {
       key: uuidv4(),
-      content: <CardNews url='assets/img/persevereLMS1.jpg' discription='In this project we used MVC for the file structure and React for the Front-end framework. Context/API was used for state management. Express,Mongoose and Node.JS on the back-end. The databases used were MariaBD(SQL) and MongoDB. Being the project manager on this was a great opportunity. I contributed to both the Front-end and Back-end code. This was a huge project that took months to complete.' title='Persevere LMS' link='https://github.com/sobrien-banyan/persevere-lms' />
+      content: <CardNews url='assets/img/persevereLMS1.jpg' discription='In this project we used MVC for the file structure and React is used. Context/API was used for state management. Express,Mongoose and Node.JS on the back-end. The databases used were MariaBD(SQL) and MongoDB. Being the project manager on this was a great opportunity. I contributed to both the Front-end and Back-end code.' title='Persevere LMS' link='https://github.com/sobrien-banyan/persevere-lms' />
     },
     {
       key: uuidv4(),
@@ -37,7 +37,7 @@ export default function ApplicationCarroussel() {
     },
     {
       key: uuidv4(),
-      content: <CardNews url='assets/img/persevereLMS1.jpg' discription='In this project we used MVC for the file structure and React for the Front-end framework. Context/API was used for state management. Express,Mongoose and Node.JS on the back-end. The databases used were MariaBD(SQL) and MongoDB. Being the project manager on this was a great opportunity. I contributed to both the Front-end and Back-end code. This was a huge project that took months to complete.' title='Persevere LMS' link='https://github.com/sobrien-banyan/persevere-lms' />
+      content: <CardNews url='assets/img/persevereLMS1.jpg' discription='In this project we used MVC for the file structure and React is used. Context/API was used for state management. Express,Mongoose and Node.JS on the back-end. The databases used were MariaBD(SQL) and MongoDB. Being the project manager on this was a great opportunity. I contributed to both the Front-end and Back-end code.' title='Persevere LMS' link='https://github.com/sobrien-banyan/persevere-lms' />
     },
   ]; /*.map((element, index) => {
     return { ...element, onClick: () => setGoToSlide(index) };
