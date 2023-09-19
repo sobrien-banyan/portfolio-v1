@@ -10,7 +10,7 @@ const Footer = () => {
         <i className="fas fa-arrow-up w3-margin-right"></i>To the top
       </a>
 
-      <p>Shaun O'Brien {new Date().getFullYear()}</p>
+      <p>Shaun OBrien {new Date().getFullYear()}</p>
       <p>
         Special Thanks To:{" "}
         <a
