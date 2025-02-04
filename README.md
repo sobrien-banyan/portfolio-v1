@@ -1,5 +1,5 @@
-# Sean OBrien Portfolio
-[![Sean's GitHub stats](https://github-readme-stats.vercel.app/api?username=sobrien-banyan&count_private=true&show_icons=true&hide=stars,issues,prs,contribs)](https://github.com/sobrien-banyan/github-readme-stats)
+# Shaun OBrien Portfolio
+[![Shaun's GitHub stats](https://github-readme-stats.vercel.app/api?username=sobrien-banyan&count_private=true&show_icons=true&hide=stars,issues,prs,contribs)](https://github.com/sobrien-banyan/github-readme-stats)
 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sobrien-banyan&layout=compact)](https://github.com/username=sobrien-banyan/github-readme-stats)
