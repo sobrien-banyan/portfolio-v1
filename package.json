@@ -29,9 +29,7 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && nodemon server.js",
     "client": "react-scripts start",
-    "build": "concurrently \"npm run build-client\" \"npm run build-server\"",
-    "build-client": "npm install && react-scripts build",
-    "build-server": "cd backend && npm install",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
