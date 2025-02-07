@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import RecordList from "./Records";
+// import RecordList from "./Records";
 
 const Snake = () => {
     const [score, setScore] = useState(0);
@@ -160,12 +160,13 @@ const Snake = () => {
     return (
         <div className="w3-container w3-content w3-center w3-padding-64 " id="snake-game">
             <h2 className="w3-wide">Snake Game</h2>
-            <h4 className="w3-hide-small">To play enter name and click the start button. Use the arrow keys to direct the snake.</h4>
+            {/* <h4 className="w3-hide-small">To play enter name and click the start button. Use the arrow keys to direct the snake.</h4> */}
+            <h4 className="w3-hide-small">To play click the start button. Use the arrow keys to direct the snake.</h4>
             <h4 className="w3-hide-medium w3-hide-large">To play enter name and click the start button. Use the direction buttons to direct the snake.</h4>
-            <div className="w3-section snake-start-btn">
+            {/* <div className="w3-section snake-start-btn">
                     <label className="w3-left">Name</label>
                     <input className='w3-input w3-border w3-hover-border-black  w3-card-4' placeholder="Enter name and press start" name='user-name' value={name} onChange={(evt) => setName(evt.target.value)} />
-                </div>
+                </div> */}
             <div className='w3-button w3-padding-large w3-large w3-margin-top snake-start-btn w3-green w3-hover-light-green w3-card-4' onClick={() => {
                 if (!hasStarted) {
                     start()
@@ -185,7 +186,7 @@ const Snake = () => {
             </div>
             <br />
           
-            <RecordList />
+            {/* <RecordList /> */}
         </div>
     );
 }
