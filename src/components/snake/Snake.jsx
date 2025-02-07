@@ -46,14 +46,8 @@ const Snake = () => {
             name: name ? name : `ACE-${currentScore}`,
             score: currentScore,
         };
-        await axios
-          .post("http://localhost:5001/records", body)
-          .then(() => {
-            setName("");
-            setScore("");
-          })
-          .catch((error) => console.error("Error adding record:", error));
-          window.location.reload();
+        await axios.post(`https://${process.env.REACT_APP_SERVER_DOMAIN}/record/add`, body);
+       
     };
 
     const gameOver = (currentScore) => {

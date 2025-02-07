@@ -5,21 +5,21 @@ export default function RecordList() {
   const [list1, setList1] = useState([]);
   const [list2, setList2] = useState([]);
 
+  // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
-        axios
-        .get("http://localhost:5001/records")
-        .then((response) => {
-          console.log(response);
-          if (response.data.length <= 10) {
-            setList1(response.data);
-          } else {
-            setList1(response.data.slice(0, 10));
-            setList2(response.data.slice(10));
-          }
-          }
-          )
-        .catch((error) => console.error("Error fetching records:", error));;
+      try {
+        const response = await axios.get(`https://${process.env.REACT_APP_SERVER_DOMAIN}/record`);
+        const data = response.data;
+        if (data.length <= 10) {
+          setList1(data);
+        } else {
+          setList1(data.slice(0, 10));
+          setList2(data.slice(10));
+        }
+      } catch (err) {
+        console.log(err.message);
+      }
     }
 
     getRecords();

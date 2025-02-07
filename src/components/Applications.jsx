@@ -38,7 +38,6 @@ const Applications = () => {
     if (window.innerWidth < 600) {
       setIsCycle(false);
     }
-    // eslint-disable-next-line
   },[window.innerWidth]);
 
   useEffect(() => {
@@ -52,7 +51,6 @@ const Applications = () => {
     if (isCycle) {
       time % 3 === 0 && setIndex(index < 3 ? index + 1 : 0)
     };
-    // eslint-disable-next-line
   }, [time]);
 
 
