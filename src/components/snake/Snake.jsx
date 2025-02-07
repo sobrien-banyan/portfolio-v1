@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import axios from 'axios';
+// import axios from 'axios';
 // import RecordList from "./Records";
 
 const Snake = () => {
     const [score, setScore] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
-    const [name, setName] = useState('');
+    // const [name, setName] = useState('');
 
     let ctx;
     let canv;
@@ -41,17 +41,17 @@ const Snake = () => {
 
     };
 
-    const scoreHandler = async (currentScore) => {
-        let body = {
-            name: name ? name : `ACE-${currentScore}`,
-            score: currentScore,
-        };
-        await axios.post(`https://${process.env.REACT_APP_SERVER_DOMAIN}/record/add`, body);
+    // const scoreHandler = async (currentScore) => {
+    //     let body = {
+    //         name: name ? name : `ACE-${currentScore}`,
+    //         score: currentScore,
+    //     };
+    //     await axios.post(`https://${process.env.REACT_APP_SERVER_DOMAIN}/record/add`, body);
        
-    };
+    // };
 
     const gameOver = (currentScore) => {
-        scoreHandler(currentScore);
+        // scoreHandler(currentScore);
         setScore(0);
         px = 10;
         py = 10;
