@@ -70,7 +70,7 @@ export default function PortfolioImg() {
       >
         <div
           style={{
-            backgroundImage: `url('assets/img/seanov3.jpg')`,
+            backgroundImage: `url('assets/img/DZSelfie.jpg')`,
             backgroundSize: "cover",
           }}
         ></div>
