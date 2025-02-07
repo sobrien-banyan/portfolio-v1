@@ -20,5 +20,3 @@ On netlify add the .env variable
 svg resource https://danmarshall.github.io/google-font-to-svg-path/
 font: oxygen 
 
-Database:
-Collection: your_database.records
