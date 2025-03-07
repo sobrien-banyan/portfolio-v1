@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ApplicationCarroussel from "./application-carroussel";
+// import ApplicationCarroussel from "./application-carroussel";
 
 const Applications = () => {
 
@@ -19,6 +19,12 @@ const Applications = () => {
       'caption': 'First built with HTML/CSS and jQuery then converted to React. Frontend only',
       'title': 'Cool Blue',
       'link': "https://cool-blue.netlify.app/"
+    },
+    {
+      'url': "assets/img/CEO.png",
+      'caption': 'This is an assessment website I built for CEOWorks using NUXT and Vue. Along with the assessment the site also has an admin section where the admin can view the results of the assessments. The site is also mobile responsive.',
+      'title': 'CEOWorks Assessments',
+      'link': "https://assessments.ceoworks.org/"
     },
     {
       'url': "assets/img/healthyLiving.png",
@@ -73,33 +79,33 @@ const Applications = () => {
         </div>
         <br />
         <a href={slides[index].link} target='_blank' rel="noopener noreferrer"> <h3>{slides[index].title}</h3></a>
-        {/* <br />
+        <br />
         {slides.length && slides.map((obj, arrayIndex) => index === arrayIndex ? (
           <a key={obj.url} href={obj.link} target='_blank' rel="noopener noreferrer">
-            <div className="mySlide fade-in-image w3-card-4">
+            <div className="mySlide w3-card-4">
               <div className="numbertext">{index + 1} / {slides.length}</div>
               <img src={obj.url} alt={obj.caption} loading="lazy" />
             </div>
           </a>
-        ) : null)} */}
+        ) : null)}
 
 
-        {/* <div className="prev fade-in-image" onClick={() => {
+        <div className="prev fade-in-image" onClick={() => {
           setIsCycle(false);
           setIndex(index === 0 ? (slides.length - 1) : index - 1)
         }}>&#10094;</div>
         <div className="next fade-in-image" onClick={() => {
           setIsCycle(false);
           setIndex(index === (slides.length - 1) ? 0 : index + 1);
-        }}>&#10095;</div> */}
+        }}>&#10095;</div>
 
-        <ApplicationCarroussel />
+        {/* <ApplicationCarroussel /> */}
 
 
       </div>
-      {/* <div className="caption-container fade-in-image">
+      <div className="caption-container fade-in-image">
         <h4 id="caption" className='fade-in-image'>{slides[index].caption}</h4>
-      </div> */}
+      </div>
     </div>
   );
 };
