@@ -74,7 +74,7 @@ const Header = (props) => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/sean-obrien-82270020a/"
+              href="https://www.linkedin.com/in/shaun-obrien-82270020a/"
             >
               <svg viewBox="0 0 128 128">
                 <g id="original">
